@@ -1,0 +1,42 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+  background-color: #edeff6;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 320px;
+  padding: 0 25px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    width: 768px;
+    padding: 0 40px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1440px;
+    padding: 0 60px;
+  }
+}
