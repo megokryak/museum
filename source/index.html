@@ -3,12 +3,372 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <title>Museum</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body >
+    <!--Header start-->
+    <header class="header">
+      <div class="header__wrapper-container container">
+        <a class="header__logo">
+          <svg class="header__logo-svg" aria-hidden="true" focusable="false" width="47" height="42" viewBox="0 0 47 42" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#logo-mobile"></use>
+          </svg>
+        </a>
+        <a class="header__basket">
+          <svg class="header__basket-svg" aria-hidden="true" focusable="false" width="31" height="30" viewBox="0 0 31 30" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#basket"></use>
+          </svg>
+        </a>
+        <a href="auth.html" class="header__auth">
+          <svg class="header__auth-svg" aria-hidden="true" focusable="false" width="28" height="34" viewBox="0 0 28 34" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#auth"></use>
+          </svg>
+        </a>
+        <button class="header__toggle" type="button">
+          <svg class="header__toggle-svg" width="40" height="13" viewBox="0 0 40 13" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#toggle"></use>
+          </svg>
+          <svg class="header__close-menu header__close-menu--hide" width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#close-menu"></use>
+          </svg>
+          <span class="visually-hidden">Открыть меню/Закрыть меню</span>
+        </button>
+      </div>
+      <!--Main Menu start-->
+      <nav class="header__navigation main-nav main-nav--closed">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html" class="main-nav__link main-nav__link--active">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="timetable.html" class="main-nav__link">Расписание</a>
+            </li>
+            <li class="main-nav__item ">
+              <a href="#" class="main-nav__link main-nav__link--toggle main-nav__link--open">Музей</a>
+              <ul class="main-nav__sublist main-nav__sublist--close">
+                <li class="main-nav__subitem">
+                  <a href="museum.html" class="main-nav__link">О музее</a>
+                </li>
+                <li class="main-nav__subitem">
+                  <a href="#" class="main-nav__link">Новости</a>
+                </li>
+                <li class="main-nav__subitem">
+                  <a href="#" class="main-nav__link">Полезные статьи</a>
+                </li>
+                <li class="main-nav__subitem">
+                  <a href="#" class="main-nav__link">Контакты</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a href="shop.html" class="main-nav__link">Магазин сувениров</a>
+            </li>
+          </ul>
+          <button class="main-nav__change-color" type="button">Светлая вкл.</button>
+        </div>
+      </nav>
+      <!--Main Menu end-->
+    </header>
+    <!--Header end-->
 
+    <!--Main start-->
+    <main class="main">
+      <div class="main__container container">
+        <h1 class="visually-hidden">Музей Художественного Стекла</h1>
+        <!--Slider start-->
+        <section class="main__slider slider">
+          <ul class="slider__list">
+            <li class="slider__item">
+              <div class="slider__wrapper-title">
+                <div class="slider__wrapper-img">
+                  <picture>
+                    <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/thailand-desktop_card.webp 1x, img/thailand-desktop_card@2x.webp 2x">
+                    <source type="image/webp" srcset="img/thailand-mobile.webp 1x, img/thailand-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/thailand-desktop_card.png 1x, img/thailand-desktop_card@2x.png 2x"> -->
+                    <img src="img/sofia.jpg" srcset="img/sofia@2x.jpg" alt="София аль-Мария" class="slider__img" width="345" height="298">
+                  </picture>
+                </div>
+                <ol class="slider__pagination-list">
+                  <li class="slider__pagination-item">
+                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                      <span class="visually-hidden">1</span>
+                    </button>
+                  </li>
+                  <li class="slider__pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                      <span class="visually-hidden">2</span>
+                    </button>
+                  </li>
+                </ol>
+                <ul class="slider__button-list">
+                  <li class="slider__button-item">
+                    <button class="slider__button slider__prev" type="button">
+                      <span class="visually-hidden">Предыдущее фото</span>
+                    </button>
+                  </li>
+                  <li class="slider__button-item">
+                    <button class="slider__button slider__next" type="button">
+                      <span class="visually-hidden">Следующее фото</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="slider__wrapper-description">
+                <h2 class="slider__title">София аль-Мария «Песня чудовищного типа»</h2>
+                <time class="slider__date">5 июля – 15 августа 2021</time>
+                <a href="#" class="slider__buy-ticket">Купить билет</a>
+              </div>
+            </li>
+            <!-- <li class="slider__item">
+              <div class="slider__wrapper-title">
+                <div class="slider__wrapper-img">
+                  <picture>
+                    <img src="img/lorem.jpg" srcset="img/lorem@2x.jpg" alt="Lorem" class="slider__img" width="345" height="298">
+                  </picture>
+                </div>
+                  <ol class="slider__pagination-list">
+                    <li class="slider__pagination-item">
+                      <button class="slider-pagination-button" type="button">
+                        <span class="visually-hidden">1</span>
+                      </button>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                        <span class="visually-hidden">2</span>
+                      </button>
+                    </li>
+                  </ol>
+                  <ul class="slider__button-list">
+                    <li class="slider__button-item">
+                      <button class="slider__button slider__prev" type="button">
+                        <span class="visually-hidden">Предыдущее фото</span>
+                      </button>
+                    </li>
+                    <li class="slider__button-item">
+                      <button class="slider__button slider__next" type="button">
+                        <span class="visually-hidden">Следующее фото</span>
+                      </button>
+                    </li>
+                  </ul>
+              </div>
+              <div class="slider__wrapper-description">
+                <h2 class="slider__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed.</h2>
+                <time class="slider__date">19 июля – 25 августа 2021</time>
+                <a href="#" class="slider__buy-ticket">Купить билет</a>
+              </div>
+            </li> -->
+          </ul>
+        </section>
+        <!--Slider end-->
+        <!-- TimeTable start -->
+        <section class="main__time-table time-table">
+          <h2 class="time-table__title">События на ближайшую неделю</h2>
+          <div class="time-tebla__calendar calendar">
+            <div class="calendar__days">
+              <ul class="calendar__list">
+                <li class="calendar__item">
+                  <span class="calendar__number">15</span>
+                  <span class="calendar__month">июля, чт</span>
+                </li>
+                <li class="calendar__item">
+                  <span class="calendar__number">16</span>
+                  <span class="calendar__month">июля, пт</span>
+                </li>
+                <li class="calendar__item calendar__item--active">
+                  <span class="calendar__number">17</span>
+                  <span class="calendar__month">июля, сб</span>
+                </li>
+                <li class="calendar__item">
+                  <span class="calendar__number">18</span>
+                  <span class="calendar__month">июля, вс</span>
+                </li>
+                <li class="calendar__item">
+                  <span class="calendar__number">19</span>
+                  <span class="calendar__month">июля, пн</span>
+                </li>
+                <li class="calendar__item">
+                  <span class="calendar__number">20</span>
+                  <span class="calendar__month">июля, вт</span>
+                </li>
+                <li class="calendar__item">
+                  <span class="calendar__number">21</span>
+                  <span class="calendar__month">июля, ср</span>
+                </li>
+                <li class="calendar__item">
+                  <a class="calendar__button">
+                    <svg width="52" height="50" viewBox="0 0 52 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#calendar"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="time-table__event-list">
+            <li class="time-table__event-item">
+              <h3 class="time-table__event-title">«Песня чудовищного типа»</h3>
+              <time class="time-table__date">17.07.2021</time>
+              <div class="time-table__wrapper">
+                <a href="#" class="time-table__buy-ticket">Купить билет</a>
+                <a href="#" class="time-table__more">Подробнее</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="time-table__button-list">
+            <li class="time-table__button-item">
+              <button class="time-table__button time-table__prev" type="button">
+                <span class="visually-hidden">Предыдущий день</span>
+              </button>
+            </li>
+            <li class="time-table__button-item">
+              <button class="time-table__button time-table__next" type="button">
+                <span class="visually-hidden">Следующий день</span>
+              </button>
+            </li>
+          </ul>
+        </section>
+        <!--TimeTable end-->
+        <!-- News start -->
+        <section class="main__news news">
+          <h2 class="news__title">Новости музея</h2>
+          <article class="news__article">
+            <picture>
+              <img src="img/news1.jpg" srcset="img/news1@2x.jpg" alt="Новость 1" class="news__img" width="344" height="344">
+            </picture>
+            <h2 class="news__article-title">Концерт кооператива «Техно-Поэзия»</h2>
+            <p class="news__article-description">Художественная деятельность кооператива «Техно-Поэзия», которую его участники (-цы) ведут параллельно с активистской работой, лежит в поле утопического воображения и самоиронии, но при этом отталкивается от конкретных проблем.</p>
+            <a href="#" class="news__article_more">Подробнее</a>
+          </article>
+          <a href="№" class="news__all-news">Все новости</a>
+          <ul class="news__button-list">
+            <li class="news__button-item">
+              <button class="news__button news__prev" type="button">
+                <span class="visually-hidden">Предыдущая статья</span>
+              </button>
+            </li>
+            <li class="news__button-item">
+              <button class="news__button news__next" type="button">
+                <span class="visually-hidden">Следующая статья</span>
+              </button>
+            </li>
+          </ul>
+        </section>
+        <!-- News end -->
+        <!-- Useful-article start -->
+        <section class="main__useful-article useful-article">
+          <h2 class="useful-article__title">Полезные статьи</h2>
+          <article class="useful-article__article">
+            <picture>
+              <img src="img/news1.jpg" srcset="img/news1@2x.jpg" alt="Новость 1" class="useful-article__img" width="344" height="344">
+            </picture>
+            <h2 class="useful-article__article-title">Концерт кооператива «Техно-Поэзия»</h2>
+            <p class="useful-article__article-description">Художественная деятельность кооператива «Техно-Поэзия», которую его участники (-цы) ведут параллельно с активистской работой, лежит в поле утопического воображения и самоиронии, но при этом отталкивается от конкретных проблем.</p>
+            <a href="#" class="useful-article__article_more">Подробнее</a>
+          </article>
+          <a href="№" class="useful-article__all-news">Все статьи</a>
+          <ul class="useful-article__button-list">
+            <li class="useful-article__button-item">
+              <button class="useful-article__button useful-article__prev" type="button">
+                <span class="visually-hidden">Предыдущая статья</span>
+              </button>
+            </li>
+            <li class="useful-article__button-item">
+              <button class="useful-article__button useful-article__next" type="button">
+                <span class="visually-hidden">Следующая статья</span>
+              </button>
+            </li>
+          </ul>
+        </section>
+        <!-- Useful-article end -->
+        <!-- Shop start -->
+        <section class="main__shop shop">
+          <h2 class="shop__title">Магазин сувениров</h2>
+          <ul class="shop__list">
+            <li class="shop__item">
+              <a href="#" class="shop__link shop__link--glasses">Бокалы</a>
+            </li>
+            <li class="shop__item">
+              <a href="#" class="shop__link shop__link--candlesticks">Подсвечники</a>
+            </li>
+            <li class="shop__item">
+              <a href="#" class="shop__link shop__link--souvenirs">Сувениры и аксессуары</a>
+            </li>
+            <li class="shop__item">
+              <a href="#" class="shop__link shop__link--creative-work">Творческие работы</a>
+            </li>
+          </ul>
+        </section>
+        <!-- Shop end -->
+        <!-- Information start -->
+        <section class="main__information information">
+          <h2 class="visually-hidden">Государева дорога</h2>
+          <svg class="information__logo-svg" aria-hidden="true" focusable="false" width="240" height="193" viewBox="0 0 240 193" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#sovereigns-road"></use>
+          </svg>
+          <p class="information__description">Музей художественного стекла входит в проект “Государева дорога”</p>
+        </section>
+        <!-- Information end -->
+      </main>
+      <!--Main end-->
+      <!-- Footer start -->
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__contacts">
+            <h2 class="footer__title">Контакты</h2>
+            <a href="tel:+79890828282" class="footer__phone">+7 (989) 082-82-82</a>
+            <a href="mailto:info@marshumov.com" class="footer__email">info@marshumov.com</a>
+            <h2 class="footer__title">Наш адрес</h2>
+            <address class="footer__address">ул. Карла Маркса, 71, п. г. т. Гвардейское, Россия</address>
+            <h2 class="footer__title">Режим работы</h2>
+            <div class="footer__date-time">
+              <span>понедельник-вторник выходной,</span>
+              <span>среда-пятница с 11.00 до 18.00,</span>
+              <span>суббота-воскресенье с 11.00 до 19.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer__map">
+        </div>
+        <div class="footer__wrapper-container container">
+          <ul class="footer__menu-list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Главная</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Выставки и события</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Новости</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Магазин</a>
+            </li>
+          </ul>
+          <a href="#" class="footer__logo">
+            <svg class="footer__logo-svg" aria-hidden="true" focusable="false" width="153" height="27" viewBox="0 0 153 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#footer-logo"></use>
+            </svg>
+          </a>
+          <p class="footer__logo-text">
+            Музей<br/>Художественного<br/>Стекла
+          </p>
+          <a href="#" class="footer__policy">Политика конфиденциальности</a>
+          <ul class="footer__socials">
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">ВКонтакте</a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">Instagram</a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <!-- Footer end -->
 
-    <script src="js/main.js"></script>
+    <script src="./js/main.js" type="module"></script>
   </body>
 </html>

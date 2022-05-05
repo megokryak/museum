@@ -1,0 +1,105 @@
+.time-table {
+  padding: 0 0 80px 0;
+}
+
+.time-table__title {
+  margin: 0;
+  padding: 0 0 20px 0;
+  font-family: "NeueMachina", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  color: @textColor;
+}
+
+.time-table__event-list {
+  list-style-type: none;
+  margin: 11px 0 0 0;
+  padding: 0;
+}
+
+.time-table__event-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 341px;
+  height: 479px;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url("../img/monster-type-song.jpg"), #1f1f1f;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px;
+}
+
+.time-table__event-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: @textColor;
+  margin: 0;
+  padding: 0;
+}
+
+.time-table__date {
+  font-size: 18px;
+  line-height: 30px;
+  color: @textColorThrough;
+  margin: 11px 0 0 0;
+}
+
+.time-table__wrapper {
+  margin: 24px 0 0 0;
+}
+
+.time-table__buy-ticket {
+  font-size: 18px;
+  line-height: 30px;
+  color: @textColor;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  border: 1px solid @textColor;
+  margin-right: 13px;
+}
+
+.time-table__more {
+  font-size: 18px;
+  line-height: 17px;
+  color: @textColor;
+}
+
+.time-table__button-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+
+.time-table__button-item:first-child {
+  margin-right: 1px;
+}
+
+.time-table__button {
+  width: 79px;
+  height: 66px;
+  background-color: @bgMenu;
+  display: block;
+  border: none;
+}
+
+.time-table__prev,
+.time-table__next {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.time-table__prev {
+  background-image: url("../img/prev.svg");
+}
+
+.time-table__next {
+  background-image: url("../img/next.svg");
+}

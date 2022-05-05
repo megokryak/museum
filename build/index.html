@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Museum</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body >
+    <header class="header">
+      <div class="header__wrapper-container container">
+        <a class="header__logo">
+          <svg>
+
+          </svg>
+        </a>
+        <a class="header__basket">
+          <svg>
+
+          </svg>
+        </a>
+        <a href="auth.html" class="header__auth">
+          <svg>
+
+          </svg>
+        </a>
+        <button class="header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню/Закрыть меню</span>
+        </button>
+        <!--Main Menu start-->
+      </div>
+      <nav class="header__navigation main-nav main-nav--closed">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html" class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="timetable.html" class="main-nav__link">Расписание</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="museum.html" class="main-nav__link main-nav__link--toggle">Музей</a>
+              <ul class="main-nav__sublist">
+                <li class="main-nav__subitem">
+                  <a href="#" class="main-nav__link">Муузей 1</a>
+                </li>
+                <li class="main-nav__subitem">
+                  <a href="#" class="main-nav__link">Муузей 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a href="shop.html" class="main-nav__link">Магазин сувениров</a>
+            </li>
+          </ul>
+          <button class="main-nav__change-color" type="button">Светлая вкл.</button>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>

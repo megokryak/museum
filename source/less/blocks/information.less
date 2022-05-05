@@ -1,0 +1,25 @@
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 740px;
+  background-image: url("../img/sovereigns-road.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/sovereigns-road@2x.jpg");
+  }
+}
+
+.information__description {
+  margin: 32px 0 0 0;
+  padding: 0 30px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: @textColor;
+}

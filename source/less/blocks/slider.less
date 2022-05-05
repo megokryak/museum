@@ -1,0 +1,137 @@
+.slider {
+  padding: 43px 0 80px 0;
+}
+
+.slider__list,
+.slider__pagination-list,
+.slider-button-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slider__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider__wrapper-title {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slider__wrapper-img {
+  flex-basis: 100%;
+}
+
+.slider__img {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slider__pagination-list {
+  display: flex;
+  margin-top: 10px;
+}
+
+.slider__pagination-item:not(:last-child) {
+  margin-right: 11px;
+}
+
+.slider-pagination-button {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  border: none;
+  background-color: @bgMenu;
+  border-radius: 50%;
+}
+
+.slider-pagination-button-current {
+  background-color: @activeColor;
+}
+
+.slider__button-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 5px 0 0 auto;
+}
+
+.slider__button-item:first-child {
+  margin-right: 1px;
+}
+
+.slider__button {
+  width: 79px;
+  height: 66px;
+  background-color: @bgMenu;
+  display: block;
+  border: none;
+}
+
+.slider__prev,
+.slider__next {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider__prev {
+  background-image: url("../img/prev.svg");
+}
+
+.slider__next {
+  background-image: url("../img/next.svg");
+}
+
+.slider__wrapper-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider__title {
+  padding: 0;
+  margin: 30px 0 0 0;
+  font-family: "NeueMachina", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  color: @textColor;
+}
+
+.slider__date {
+  margin: 13px 0 0 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: @textColor;
+}
+
+.slider__buy-ticket {
+  width: 270px;
+  margin: 26px 0 0 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 30px;
+  color: @textColor;
+  text-decoration: none;
+  padding: 20px 96px 20px 50px;
+  background-color: @bgMenu;
+  position: relative;
+}
+
+.slider__buy-ticket::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 43px;
+  height: 8px;
+  margin: -4px 0 0 0;
+  background-image: url("../img/after-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

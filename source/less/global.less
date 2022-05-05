@@ -3,13 +3,13 @@ html {
 }
 
 body {
-  min-width: 320px;
-  font-family: "Blogger Sans", "Arial", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+  min-width: @xxs-width;
+  font-family: "GothamPro", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 22px;
-  color: #444444;
-  background-color: #edeff6;
+  color: @textColorThrough;
+  background-color: @bgColor;
   margin: 0;
 }
 
@@ -25,18 +25,8 @@ body {
 }
 
 .container {
-  width: 320px;
-  padding: 0 25px;
+  width: @xxs-width;
+  padding: 0 15px;
   margin: 0 auto;
   box-sizing: border-box;
-
-  @media (min-width: 768px) {
-    width: 768px;
-    padding: 0 40px;
-  }
-
-  @media (min-width: 1440px) {
-    width: 1440px;
-    padding: 0 60px;
-  }
 }

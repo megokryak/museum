@@ -1,0 +1,53 @@
+.calendar__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.calendar__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90px;
+  height: 99px;
+  background-color: @bgMenu;
+}
+
+.calendar__item:not(:last-child) {
+  margin-right: 2px;
+}
+
+.calendar__item:last-child {
+  background-color: transparent;
+  justify-content: center;
+}
+
+.calendar__item--active {
+  background-color: @activeColor;
+}
+
+.calendar__item--active .calendar__number,
+.calendar__item--active .calendar__month {
+  color: @textColor;
+}
+
+.calendar__number {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 45px;
+  color: @noActiveCalendar;
+  margin: 15px 0 0 13px;
+}
+
+.calendar__month {
+  font-size: 16px;
+  line-height: 18px;
+  color: @noActiveCalendar;
+  margin: 0 0 7px 13px;
+}
+
+.calendar__button {
+  text-align: center;
+}
