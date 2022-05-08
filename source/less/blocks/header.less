@@ -1,6 +1,11 @@
 .header {
   padding-top: 61px;
   background-color: @headerColor;
+
+  @media (min-width: @xs-width) {
+    padding-top: 26px;
+    padding-bottom: 25px;
+  }
 }
 
 .header__wrapper-container {
@@ -10,6 +15,53 @@
 
 .header__logo {
   flex-grow: 1;
+
+  @media (min-width: @xs-width) {
+    flex-grow: 0;
+  }
+}
+
+.header__logo-svg {
+  @media (min-width: @xs-width) {
+    display: none;
+  }
+}
+
+.header__logo-svg--xs {
+  display: none;
+
+  @media (min-width: @xs-width) {
+    display: block;
+  }
+}
+
+.header__change-color {
+  display: none;
+
+  @media (min-width: @xs-width) {
+    display: block;
+    width: 70px;
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    background-color: @bgColor;
+    position: relative;
+    margin-right: auto;
+  }
+}
+
+.header__change-color::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 26px;
+  height: 26px;
+  margin: -13px -13px 0 0;
+  background-image: url("../img/light-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px 26px;
 }
 
 .header__basket {
