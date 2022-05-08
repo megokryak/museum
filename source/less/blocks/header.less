@@ -14,11 +14,25 @@
 
 .header__basket {
   margin-right: 35px;
+  position: relative;
+}
+
+.header__basket::after {
+  content: attr(data-col);
+  position: absolute;
+  top: 0;
+  right: -50%;
+  padding: 4px 9px;
+  border-radius: 9px;
+  background-color: @activeColor;
+  color: @textColor;
+  font-size: 12px;
+  line-height: 11px;
+  margin: -6px 0 0 0;
 }
 
 .header__auth {
   color: transparent;
-  margin-right: 35px;
 }
 
 .header__toggle {
@@ -31,6 +45,11 @@
   display: block;
   background-color: transparent;
   border: none;
+  margin-left: 53px;
+}
+
+.header__toggle-svg {
+  margin-left: 35px;
 }
 
 .header__close-menu--hide,
