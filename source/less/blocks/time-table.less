@@ -1,5 +1,9 @@
 .time-table {
   padding: 0 0 80px 0;
+
+  @media (min-width: @xs-width) {
+    padding: 0 0 100px 0;
+  }
 }
 
 .time-table__title {
@@ -11,6 +15,12 @@
   font-size: 26px;
   line-height: 30px;
   color: @textColor;
+
+  @media (min-width: @xs-width) {
+    font-size: 30px;
+    line-height: 34px;
+    padding: 0 0 40px 0;
+  }
 }
 
 .time-table__event-list {
@@ -23,14 +33,41 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 341px;
-  height: 479px;
+  width: 100%;
   box-sizing: border-box;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url("../img/monster-type-song.jpg"), #1f1f1f;
+  padding: 89% 25px 25px 25px;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: @xs-width) {
+    width: 419px;
+    height: 490px;
+    padding: 25px;
+  }
+}
+
+.time-table__event-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
   background-repeat: no-repeat;
   background-position: center;
-  padding: 25px;
 }
+
+.time-table__event-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  object-fit: cover;
+}
+
 
 .time-table__event-title {
   font-weight: 500;
@@ -39,6 +76,7 @@
   color: @textColor;
   margin: 0;
   padding: 0;
+  z-index: 1;
 }
 
 .time-table__date {
@@ -46,9 +84,11 @@
   line-height: 30px;
   color: @textColorThrough;
   margin: 11px 0 0 0;
+  z-index: 1;
 }
 
 .time-table__wrapper {
+  z-index: 1;
   margin: 24px 0 0 0;
 }
 
@@ -88,6 +128,11 @@
   background-color: @bgMenu;
   display: block;
   border: none;
+
+  @media (min-width: @xs-width) {
+    width: 117px;
+    height: 103px;
+  }
 }
 
 .time-table__prev,
@@ -98,8 +143,18 @@
 
 .time-table__prev {
   background-image: url("../img/prev.svg");
+
+  @media (min-width: @xs-width) {
+    background-image: url("../img/prev600.svg");
+    background-size: 31px 15px;
+  }
 }
 
 .time-table__next {
   background-image: url("../img/next.svg");
+
+  @media (min-width: @xs-width) {
+    background-image: url("../img/next600.svg");
+    background-size: 31px 15px;
+  }
 }
