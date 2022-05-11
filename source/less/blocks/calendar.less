@@ -13,10 +13,19 @@
   width: 90px;
   height: 99px;
   background-color: @bgMenu;
+
+  @media (min-width: @sm-width) {
+    width: 98px;
+    height: 109px;
+  }
 }
 
 .calendar__item:not(:last-child) {
   margin-right: 2px;
+
+  @media (min-width: @sm-width) {
+    margin-right: 4px;
+  }
 }
 
 .calendar__item:last-child {

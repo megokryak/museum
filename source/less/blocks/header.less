@@ -47,6 +47,11 @@
     background-color: @bgColor;
     position: relative;
     margin-right: auto;
+
+    @media (min-width: @sm-width) {
+      width: auto;
+      border-radius: 0;
+    }
   }
 }
 
@@ -62,6 +67,22 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 26px 26px;
+
+  @media (min-width: @sm-width) {
+    right: 21px;
+    margin-right: 0;
+  }
+}
+
+.header__change-text {
+  display: none;
+
+  @media (min-width: @sm-width) {
+    display: block;
+    line-height: 13px;
+    color: @textColor;
+    padding: 16px 57px 16px 19px;
+  }
 }
 
 .header__basket {
