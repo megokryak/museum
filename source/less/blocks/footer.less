@@ -155,12 +155,20 @@
   line-height: 24px;
   color: @textColor;
   text-decoration: none;
+
+  @media (min-width: @sm-width) {
+    width: 100%;
+  }
 }
 
 .footer__wrapper-socials {
   @media (min-width: @xs-width) {
     display: flex;
     width: 100%;
+  }
+
+  @media (min-width: @sm-width) {
+    position: relative;
   }
 }
 
@@ -176,6 +184,11 @@
   @media (min-width: @xs-width) {
     flex-grow: 1;
     align-items: center;
+  }
+
+  @media (min-width: @sm-width) {
+    width: 60%;
+    flex-grow: 0;
   }
 }
 
@@ -203,6 +216,13 @@
     background-color: transparent;
     border: none;
     padding: 0 45px 0 0;
+  }
+
+  @media (min-width: @sm-width) {
+    position: absolute;
+    top: -115px;
+    right: 0;
+    margin: 0;
   }
 }
 

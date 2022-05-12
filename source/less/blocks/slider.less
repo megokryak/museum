@@ -1,4 +1,7 @@
 .slider {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 43px 0 80px 0;
 
   @media (min-width: @xs-width) {
@@ -15,6 +18,7 @@
 }
 
 .slider__list {
+  width: 100%;
   overflow: hidden;
   display: flex;
 }
@@ -23,15 +27,6 @@
   min-width: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.slider__wrapper-title {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.slider__wrapper-img {
-  flex-basis: 100%;
 }
 
 .slider__img {

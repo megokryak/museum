@@ -42,7 +42,6 @@
   justify-content: flex-end;
   box-sizing: border-box;
   min-width: 100%;
-  box-sizing: border-box;
   padding: 89% 25px 25px 25px;
   position: relative;
   z-index: 1;
@@ -51,6 +50,11 @@
     min-width: 419px;
     height: 490px;
     padding: 25px;
+  }
+
+  @media (min-width: @sm-width) {
+    min-width: 328px;
+    height: 476px;
   }
 }
 
@@ -116,12 +120,20 @@
   box-sizing: border-box;
   border: 1px solid @textColor;
   margin-right: 13px;
+
+  @media (min-width: @sm-width) {
+    margin-right: 0;
+  }
 }
 
 .time-table__more {
   font-size: 18px;
   line-height: 17px;
   color: @textColor;
+
+  @media (min-width: @sm-width) {
+    margin-left: auto;
+  }
 }
 
 .time-table__button-list {
