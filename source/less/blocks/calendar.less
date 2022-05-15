@@ -18,6 +18,11 @@
     width: 98px;
     height: 109px;
   }
+
+  @media (min-width: @md-width) {
+    width: 120px;
+    height: 109px;
+  }
 }
 
 .calendar__item:not(:last-child) {
@@ -25,6 +30,10 @@
 
   @media (min-width: @sm-width) {
     margin-right: 4px;
+  }
+
+  @media (min-width: @md-width) {
+    margin-right: 0;
   }
 }
 

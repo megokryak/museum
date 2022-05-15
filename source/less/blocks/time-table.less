@@ -56,11 +56,20 @@
     min-width: 328px;
     height: 476px;
   }
+
+  @media (min-width: @bg-width) {
+    min-width: 410px;
+    height: 487px;
+  }
 }
 
 .time-table__event-item:not(:last-child) {
   @media (min-width: @xs-width) {
     margin-right: 31px;
+  }
+
+  @media (min-width: @bg-width) {
+    margin-right: 30px;
   }
 }
 

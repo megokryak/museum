@@ -4,6 +4,22 @@
   @media (min-width: @xs-width) {
     padding: 0 0 58px 0;
   }
+
+  @media (min-width: @md-width) {
+    padding: 0 0 46px 0;
+  }
+
+  @media (min-width: @bg-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.footer__container {
+  @media (min-width: @bg-width) {
+    order: 2;
+    width: 50%;
+  }
 }
 
 .footer__contacts {
@@ -13,6 +29,11 @@
   @media (min-width: @xs-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @bg-width) {
+    flex-direction: column;
   }
 }
 
@@ -42,6 +63,14 @@
   @media (min-width: @xs-width) {
     width: 50%;
   }
+
+  @media (min-width: @md-width) {
+    width: 33%;
+  }
+
+  @media (min-width: @bg-width) {
+    width: 100%;
+  }
 }
 
 .footer__wrapper-address {
@@ -61,6 +90,10 @@
 .footer__wrapper-data-time {
   @media (min-width: @xs-width) {
     order: 3;
+  }
+
+  @media (min-width: @md-width) {
+    margin-top: 0;
   }
 }
 
@@ -87,9 +120,24 @@
   flex-direction: column;
 }
 
+.footer__map {
+  display: block;
+  box-sizing: border-box;
+
+  @media (min-width: @bg-width) {
+    order: 1;
+    width: 50%;
+  }
+}
+
 .footer__wrapper-container {
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: @bg-width) {
+    order: 3;
+    width: 100%;
+  }
 }
 
 .footer__menu-list {
@@ -104,11 +152,24 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  @media (min-width: @md-width) {
+    padding-right: 316px;
+    order: 1;
+  }
+
+  @media (min-width: @bg-width) {
+    justify-content: flex-start;
+  }
 }
 
 .footer__logo {
   display: block;
   margin: 41px 15px 0 0;
+
+  @media (min-width: @md-width) {
+    order: 2;
+  }
 }
 
 .footer__item:not(:first-child) {
@@ -116,6 +177,10 @@
 
   @media (min-width: @xs-width) {
     margin: 0;
+  }
+
+  @media (min-width: @bg-width) {
+    margin-left: 80px;
   }
 }
 
@@ -146,6 +211,10 @@
     font-size: 14px;
     line-height: 18px;
   }
+
+  @media (min-width: @md-width) {
+    order: 3;
+  }
 }
 
 .footer__policy {
@@ -159,6 +228,20 @@
   @media (min-width: @sm-width) {
     width: 100%;
   }
+
+  @media (min-width: @md-width) {
+    order: 5;
+  }
+
+  @media (min-width: @bg-width) {
+    width: auto;
+    order: 4;
+  }
+
+  @media (min-width: @bg-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .footer__wrapper-socials {
@@ -169,6 +252,22 @@
 
   @media (min-width: @sm-width) {
     position: relative;
+  }
+
+  @media (min-width: @md-width) {
+    order: 4;
+    width: 50%;
+    margin-left: auto;
+  }
+
+  @media (min-width: @bg-width) {
+    order: 5;
+    width: auto;
+    margin-left: 0;
+  }
+
+  @media (min-width: @bg-width) {
+    margin-left: auto;
   }
 }
 
@@ -190,10 +289,20 @@
     width: 60%;
     flex-grow: 0;
   }
+
+  @media (min-width: @md-width) {
+    width: 100%;
+  }
 }
 
 .footer__social-item {
   flex-grow: 1;
+}
+
+.footer__social-item:not(:last-child) {
+  @media (min-width: @bg-width) {
+    margin-right: 35px;
+  }
 }
 
 .footer__social-link {
@@ -223,6 +332,10 @@
     top: -115px;
     right: 0;
     margin: 0;
+  }
+
+  @media (min-width: @md-width) {
+    top: -50px;
   }
 }
 

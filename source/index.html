@@ -17,10 +17,13 @@
             <use xlink:href="img/sprite.svg#footer-logo"></use>
           </svg>
         </a>
+        <p class="header__logo-text">
+          Музей<br/>Художественного<br/>Стекла
+        </p>
         <button class="header__change-color" type="button">
           <span class="header__change-text">Светлая вкл.</span>
         </button>
-        <a class="header__basket" data-col="10">
+        <a class="header__basket" data-col="10" data-price="15 000 ₽">
           <svg class="header__basket-svg" aria-hidden="true" focusable="false" width="31" height="30" viewBox="0 0 31 30" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/sprite.svg#basket"></use>
           </svg>
@@ -84,48 +87,50 @@
         <h1 class="visually-hidden">Музей Художественного Стекла</h1>
         <!--Slider start-->
         <section class="main__slider slider">
-          <ul class="slider__list">
-            <li class="slider__item">
-              <picture>
-                <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/thailand-desktop_card.webp 1x, img/thailand-desktop_card@2x.webp 2x">
-                <source type="image/webp" srcset="img/thailand-mobile.webp 1x, img/thailand-mobile@2x.webp 2x">-->
-                <source media="(min-width: 600px)" srcset="img/sofia600.jpg 1x, img/sofia600@2x.jpg 2x">
-                <img src="img/sofia.jpg" srcset="img/sofia@2x.jpg" alt="София аль-Мария" class="slider__img" width="345" height="298">
-              </picture>
-            </li>
-            <li class="slider__item">
-              <picture>
-                <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/thailand-desktop_card.webp 1x, img/thailand-desktop_card@2x.webp 2x">
-                <source type="image/webp" srcset="img/thailand-mobile.webp 1x, img/thailand-mobile@2x.webp 2x">-->
-                <source media="(min-width: 600px)" srcset="img/sofia600.jpg 1x, img/sofia600@2x.jpg 2x">
-                <img src="img/sofia.jpg" srcset="img/sofia@2x.jpg" alt="София аль-Мария" class="slider__img" width="345" height="298">
-              </picture>
-            </li>
-          </ul>
-          <ol class="slider__pagination-list">
-            <li class="slider__pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">1</span>
-              </button>
-            </li>
-            <li class="slider__pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">2</span>
-              </button>
-            </li>
-          </ol>
-          <ul class="slider__button-list">
-            <li class="slider__button-item">
-              <button class="slider__button slider__prev" type="button">
-                <span class="visually-hidden">Предыдущее фото</span>
-              </button>
-            </li>
-            <li class="slider__button-item">
-              <button class="slider__button slider__next" type="button">
-                <span class="visually-hidden">Следующее фото</span>
-              </button>
-            </li>
-          </ul>
+          <div class="slider__wrapper">
+            <ul class="slider__list">
+              <li class="slider__item">
+                <picture>
+                  <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/thailand-desktop_card.webp 1x, img/thailand-desktop_card@2x.webp 2x">
+                  <source type="image/webp" srcset="img/thailand-mobile.webp 1x, img/thailand-mobile@2x.webp 2x">-->
+                  <source media="(min-width: 600px)" srcset="img/sofia600.jpg 1x, img/sofia600@2x.jpg 2x">
+                  <img src="img/sofia.jpg" srcset="img/sofia@2x.jpg" alt="София аль-Мария" class="slider__img" width="345" height="298">
+                </picture>
+              </li>
+              <li class="slider__item">
+                <picture>
+                  <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/thailand-desktop_card.webp 1x, img/thailand-desktop_card@2x.webp 2x">
+                  <source type="image/webp" srcset="img/thailand-mobile.webp 1x, img/thailand-mobile@2x.webp 2x">-->
+                  <source media="(min-width: 600px)" srcset="img/sofia600.jpg 1x, img/sofia600@2x.jpg 2x">
+                  <img src="img/sofia.jpg" srcset="img/sofia@2x.jpg" alt="София аль-Мария" class="slider__img" width="345" height="298">
+                </picture>
+              </li>
+            </ul>
+            <ol class="slider__pagination-list">
+              <li class="slider__pagination-item">
+                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                  <span class="visually-hidden">1</span>
+                </button>
+              </li>
+              <li class="slider__pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">2</span>
+                </button>
+              </li>
+            </ol>
+            <ul class="slider__button-list">
+              <li class="slider__button-item">
+                <button class="slider__button slider__prev" type="button">
+                  <span class="visually-hidden">Предыдущее фото</span>
+                </button>
+              </li>
+              <li class="slider__button-item">
+                <button class="slider__button slider__next" type="button">
+                  <span class="visually-hidden">Следующее фото</span>
+                </button>
+              </li>
+            </ul>
+          </div>
           <div class="slider__wrapper-description">
             <h2 class="slider__title">София аль-Мария «Песня чудовищного типа»</h2>
             <time class="slider__date">5 июля – 15 августа 2021</time>
