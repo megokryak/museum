@@ -1,5 +1,5 @@
 .time-table {
-  padding: 0 0 80px 0;
+  padding: 0 0 77px 0;
 
   @media (min-width: @xs-width) {
     padding: 0 0 100px 0;
@@ -8,7 +8,7 @@
 
 .time-table__title {
   margin: 0;
-  padding: 0 0 20px 0;
+  padding: 0 0 23px 0;
   font-family: "NeueMachina", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -30,7 +30,7 @@
 
 .time-table__event-list {
   list-style-type: none;
-  margin: 11px 0 0 0;
+  margin: 13px 0 0 0;
   padding: 0;
   overflow: hidden;
   display: flex;
@@ -42,7 +42,8 @@
   justify-content: flex-end;
   box-sizing: border-box;
   min-width: 100%;
-  padding: 89% 25px 25px 25px;
+  min-height: 479px;
+  padding: 0 25px 25px 28px;
   position: relative;
   z-index: 1;
 
@@ -130,10 +131,10 @@
   color: @textColor;
   text-decoration: none;
   display: inline-block;
-  padding: 15px 20px;
+  padding: 15px 19px;
   box-sizing: border-box;
   border: 1px solid @textColor;
-  margin-right: 13px;
+  margin-right: 18px;
 
   @media (min-width: @sm-width) {
     margin-right: 0;
@@ -159,14 +160,15 @@
 }
 
 .time-table__button-item:first-child {
-  margin-right: 1px;
+  margin-right: 4px;
 }
 
 .time-table__button {
-  width: 79px;
+  width: 75px;
   height: 66px;
   background-color: @bgMenu;
   display: block;
+  padding: 0;
   border: none;
 
   @media (min-width: @xs-width) {
