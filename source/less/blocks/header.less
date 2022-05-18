@@ -38,6 +38,14 @@
 
   @media (min-width: @xs-width) {
     display: block;
+    margin: 0 0 0 5px;
+  }
+}
+
+.header__logo-svg--xs use {
+  @media (min-width: @xs-width) {
+    width: 176px;
+    height: 36px;
   }
 }
 
@@ -70,6 +78,7 @@
     background-color: @bgColor;
     position: relative;
     margin-right: auto;
+    margin-left: 22px;
   }
 
   @media (min-width: @sm-width) {
@@ -129,12 +138,23 @@
   margin: 3px 33px 0 0;
   position: relative;
 
+  @media (min-width: @xs-width) {
+    margin: 9px 47px 0 0;
+  }
+
   @media (min-width: @md-width) {
     padding-right: 115px;
   }
 
   @media (min-width: @gg-width) {
     order: 5;
+  }
+}
+
+.header__basket-svg {
+  @media (min-width: @xs-width) {
+    width: 33px;
+    height: 33px;
   }
 }
 
@@ -172,6 +192,10 @@
 .header__auth {
   color: transparent;
 
+  @media (min-width: @xs-width) {
+    margin-top: 1px;
+  }
+
   @media (min-width: @gg-width) {
     order: 6;
   }
@@ -197,6 +221,12 @@
 
 .header__toggle-svg {
   margin-left: 35px;
+
+  @media (min-width: @xs-width) {
+    width: 50px;
+    height: 18px;
+    margin-left: 31px;
+  }
 }
 
 .header__close-menu--hide,
