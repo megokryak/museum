@@ -6,7 +6,7 @@
   padding: 0 0 78px 0;
 
   @media (min-width: @xs-width) {
-    padding: 0 0 100px 0;
+    padding: 0 0 98px 0;
   }
 }
 
@@ -41,6 +41,7 @@
   @media (min-width: @xs-width) {
     min-width: 328px;
     min-height: 685px;
+    padding: 0;
   }
 }
 
@@ -131,9 +132,10 @@
   @media (min-width: @xs-width) {
     font-size: 18px;
     line-height: 30px;
-    padding: 40px 90px 40px 26px;
+    padding: 32px 99px 37px 39px;
     position: relative;
-    margin-top: 33px;
+    margin-top: 34px;
+    margin-left: 5px;
   }
 
   @media (min-width: @sm-width) {
@@ -197,8 +199,16 @@
 
 .useful-article__prev {
   background-image: url("../img/prev.svg");
+
+  @media (min-width: @xs-width) {
+    background-image: url("../img/prev600.svg");
+  }
 }
 
 .useful-article__next {
   background-image: url("../img/next.svg");
+
+  @media (min-width: @xs-width) {
+    background-image: url("../img/next600.svg");
+  }
 }

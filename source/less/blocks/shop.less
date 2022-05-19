@@ -1,5 +1,9 @@
 .shop {
   padding: 0 0 78px 0;
+
+  @media (min-width: @xs-width) {
+    padding: 0 0 99px 0;
+  }
 }
 
 .shop__title {
@@ -15,6 +19,7 @@
   @media (min-width: @xs-width) {
     font-size: 30px;
     line-height: 34px;
+    padding-left: 5px;
   }
 
   @media (min-width: @sm-width) {
@@ -29,7 +34,7 @@
   padding: 0;
 
   @media (min-width: @xs-width) {
-    margin: 40px 0 0 0;
+    margin: 48px 0 0 0;
   }
 
   @media (min-width: @sm-width) {
@@ -53,6 +58,10 @@
 
 .shop__item:not(:first-child) {
   margin-top: 20px;
+
+  @media (min-width: @xs-width) {
+    margin-top: 30px;
+  }
 
   @media (min-width: @sm-width) {
     margin-top: 0;

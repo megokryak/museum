@@ -25,6 +25,10 @@
 
 .information__logo-svg {
   margin-top: 29px;
+
+  @media (min-width: @xs-width) {
+    margin-top: 3px;
+  }
 }
 
 .information__description {
@@ -34,6 +38,10 @@
   line-height: 30px;
   text-align: center;
   color: @textColor;
+
+  @media (min-width: @xs-width) {
+    padding: 0 45px;
+  }
 
   @media (min-width: @sm-width) {
     padding: 0 112px;
