@@ -4,6 +4,10 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @xs-width) {
+    padding-left: 5px;
+  }
 }
 
 .calendar__item {
@@ -57,6 +61,10 @@
   line-height: 45px;
   color: @noActiveCalendar;
   margin: 17px 0 0 16px;
+
+  @media (min-width: @xs-width) {
+    margin: 14px 0 0 14px;
+  }
 }
 
 .calendar__month {
@@ -64,6 +72,10 @@
   line-height: 18px;
   color: @noActiveCalendar;
   margin: 0 0 5px 16px;
+
+  @media (min-width: @xs-width) {
+    margin: 0 0 6px 14px;
+  }
 }
 
 .calendar__button {

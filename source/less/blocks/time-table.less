@@ -2,7 +2,7 @@
   padding: 0 0 77px 0;
 
   @media (min-width: @xs-width) {
-    padding: 0 0 100px 0;
+    padding: 0 0 96px 0;
   }
 }
 
@@ -19,7 +19,7 @@
   @media (min-width: @xs-width) {
     font-size: 30px;
     line-height: 34px;
-    padding: 0 0 40px 0;
+    padding: 0 0 42px 0;
   }
 
   @media (min-width: @sm-width) {
@@ -34,6 +34,10 @@
   padding: 0;
   overflow: hidden;
   display: flex;
+
+  @media (min-width: @xs-width) {
+    margin: 42px 0 0 5px;
+  }
 }
 
 .time-table__event-item {
@@ -123,6 +127,11 @@
 .time-table__wrapper {
   z-index: 1;
   margin: 24px 0 0 0;
+
+  @media (min-width: @xs-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .time-table__buy-ticket {
@@ -136,6 +145,10 @@
   border: 1px solid @textColor;
   margin-right: 18px;
 
+  @media (min-width: @xs-width) {
+    margin: 0;
+  }
+
   @media (min-width: @sm-width) {
     margin-right: 0;
   }
@@ -145,6 +158,10 @@
   font-size: 18px;
   line-height: 17px;
   color: @textColor;
+
+  @media (min-width: @xs-width) {
+    margin: 24px 0 0 0;
+  }
 
   @media (min-width: @sm-width) {
     margin-left: auto;
@@ -157,6 +174,10 @@
   list-style-type: none;
   padding: 0;
   margin: 5px 0 0 0;
+
+  @media (min-width: @xs-width) {
+    margin: 21px 0 0 0;
+  }
 }
 
 .time-table__button-item:first-child {
