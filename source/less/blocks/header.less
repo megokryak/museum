@@ -68,6 +68,7 @@
 
 .header__change-color {
   display: none;
+  padding: 0;
 
   @media (min-width: @xs-width) {
     display: block;
@@ -84,6 +85,7 @@
   @media (min-width: @sm-width) {
     width: auto;
     border-radius: 0;
+    margin-left: 57px;
   }
 
   @media (min-width: @bg-width) {
@@ -122,9 +124,12 @@
 
   @media (min-width: @sm-width) {
     display: block;
+    font-family: "GothamPro", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 13px;
     color: @textColor;
-    padding: 16px 57px 16px 19px;
+    padding: 14px 67px 16px 19px;
   }
 
   @media (min-width: @md-width) {
@@ -226,6 +231,10 @@
     width: 50px;
     height: 18px;
     margin-left: 31px;
+  }
+
+  @media (min-width: @sm-width) {
+    margin-left: 28px;
   }
 }
 
