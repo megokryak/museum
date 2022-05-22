@@ -47,6 +47,10 @@
   @media (min-width: @sm-width) {
     margin: 30px 0 0 0;
   }
+
+  @media (min-width: @md-width) {
+    margin: 36px 0 0 0;
+  }
 }
 
 .time-table__event-item {
@@ -61,6 +65,7 @@
   z-index: 1;
 
   @media (min-width: @xs-width) {
+    min-height: initial;
     min-width: 419px;
     height: 490px;
     padding: 25px;
@@ -69,6 +74,11 @@
   @media (min-width: @sm-width) {
     min-width: 328px;
     height: 476px;
+  }
+
+  @media (min-width: @md-width) {
+    min-width: 370px;
+    height: 420px;
   }
 
   @media (min-width: @bg-width) {
@@ -191,6 +201,10 @@
   @media (min-width: @sm-width) {
     margin: 17px 0 0 0;
   }
+
+  @media (min-width: @md-width) {
+    margin: 19px 0 0 0;
+  }
 }
 
 .time-table__button-item:first-child {
@@ -214,6 +228,11 @@
     width: 103px;
     height: 103px;
   }
+
+  @media (min-width: @sm-width) {
+    width: 134px;
+    height: 133px;
+  }
 }
 
 .time-table__prev,
@@ -229,6 +248,11 @@
     background-image: url("../img/prev600.svg");
     background-size: 31px 15px;
   }
+
+  @media (min-width: @md-width) {
+    background-image: url("../img/prev1024.svg");
+    background-size: 37px 16px;
+  }
 }
 
 .time-table__next {
@@ -237,5 +261,10 @@
   @media (min-width: @xs-width) {
     background-image: url("../img/next600.svg");
     background-size: 31px 15px;
+  }
+
+  @media (min-width: @md-width) {
+    background-image: url("../img/next1024.svg");
+    background-size: 37px 16px;
   }
 }

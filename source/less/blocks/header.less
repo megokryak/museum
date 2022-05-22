@@ -6,6 +6,11 @@
     padding-top: 26px;
     padding-bottom: 25px;
   }
+
+  @media (min-width: @md-width) {
+    padding-top: 21px;
+    padding-bottom: 20px;
+  }
 }
 
 .header__wrapper-container {
@@ -40,12 +45,22 @@
     display: block;
     margin: 0 0 0 5px;
   }
+
+  @media (min-width: @md-width) {
+    width: 204px;
+    height: 35px;
+  }
 }
 
 .header__logo-svg--xs use {
   @media (min-width: @xs-width) {
     width: 176px;
     height: 36px;
+  }
+
+  @media (min-width: @md-width) {
+    width: 204px;
+    height: 35px;
   }
 }
 
@@ -88,6 +103,11 @@
     margin-left: 57px;
   }
 
+  @media (min-width: @md-width) {
+    margin-left: 44px;
+    height: auto;
+  }
+
   @media (min-width: @bg-width) {
     margin-left: auto;
     margin-right: 87px;
@@ -117,6 +137,12 @@
     right: 21px;
     margin-right: 0;
   }
+
+  @media (min-width: @md-width) {
+    background-size: 31px 31px;
+    margin: -14px 0 0 0;
+    right: 31px;
+  }
 }
 
 .header__change-text {
@@ -135,7 +161,7 @@
   @media (min-width: @md-width) {
     font-size: 18px;
     line-height: 17px;
-    padding: 20px 85px 20px 25px;
+    padding: 21px 85px 20px 25px;
   }
 }
 
@@ -148,7 +174,8 @@
   }
 
   @media (min-width: @md-width) {
-    padding-right: 115px;
+    padding-right: 111px;
+    margin: 9px 31px 0 0;
   }
 
   @media (min-width: @gg-width) {
@@ -160,6 +187,11 @@
   @media (min-width: @xs-width) {
     width: 33px;
     height: 33px;
+  }
+
+  @media (min-width: @md-width) {
+    width: 37px;
+    height: 37px;
   }
 }
 
@@ -177,7 +209,7 @@
   margin: -6px 0 0 -1px;
 
   @media (min-width: @md-width) {
-    left: calc(50% - 57px);
+    left: calc(50% - 55px);
   }
 
   @media (min-width: @sm-width) {
@@ -194,7 +226,7 @@
     color: @textColor;
     font-size: 18px;
     line-height: 18px;
-    margin: -9px 0 0 0;
+    margin: -14px 0 0 0;
   }
 }
 
@@ -239,6 +271,19 @@
 
   @media (min-width: @sm-width) {
     margin-left: 28px;
+  }
+
+  @media (min-width: @md-width) {
+    width: 80px;
+    height: 25px;
+    margin-left: 50px;
+  }
+}
+
+.header__auth-svg {
+  @media (min-width: @md-width) {
+    width: 33px;
+    height: 42px;
   }
 }
 
