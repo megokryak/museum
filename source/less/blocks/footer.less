@@ -32,6 +32,10 @@
     justify-content: space-between;
   }
 
+  @media (min-width: @md-width) {
+    justify-content: flex-start;
+  }
+
   @media (min-width: @bg-width) {
     flex-direction: column;
   }
@@ -67,7 +71,7 @@
   }
 
   @media (min-width: @md-width) {
-    width: 33%;
+    width: auto;
   }
 
   @media (min-width: @bg-width) {
@@ -85,6 +89,8 @@
 
   @media (min-width: @md-width) {
     margin-top: 0;
+    margin-right: 13px;
+    width: 290px;
   }
 }
 
@@ -100,6 +106,11 @@
   @media (min-width: @sm-width) {
     margin: 43px 0 0 0;
   }
+
+  @media (min-width: @md-width) {
+    width: auto;
+    margin-top: 0;
+  }
 }
 
 .footer__wrapper-contacts {
@@ -107,6 +118,10 @@
     order: 2;
     margin-top: 0;
     padding-left: 15px;
+  }
+
+  @media (min-width: @md-width) {
+    margin-right: 67px;
   }
 }
 
@@ -158,6 +173,11 @@
     min-height: 597px;
   }
 
+  @media (min-width: @md-width) {
+    margin-top: 22px;
+    min-height: 534px;
+  }
+
   @media (min-width: @bg-width) {
     order: 1;
     width: 50%;
@@ -175,6 +195,10 @@
 
   @media (min-width: @sm-width) {
     margin: 56px 0 0 0;
+  }
+
+  @media (min-width: @md-width) {
+    margin: 55px 0 0 0;
   }
 
   @media (min-width: @bg-width) {
@@ -202,7 +226,7 @@
   }
 
   @media (min-width: @md-width) {
-    padding-right: 316px;
+    padding-right: 269px;
     order: 1;
   }
 
@@ -225,6 +249,7 @@
 
   @media (min-width: @md-width) {
     order: 2;
+    margin: 44px 13px 0 0;
   }
 }
 
@@ -299,6 +324,7 @@
 
   @media (min-width: @md-width) {
     order: 5;
+    margin: 21px 0 0 0;
   }
 
   @media (min-width: @bg-width) {
@@ -328,7 +354,7 @@
 
   @media (min-width: @md-width) {
     order: 4;
-    width: 50%;
+    width: auto;
     margin-left: auto;
   }
 
@@ -364,6 +390,7 @@
 
   @media (min-width: @md-width) {
     width: 100%;
+    margin-right: 32px;
   }
 }
 
@@ -384,6 +411,10 @@
 .footer__social-item:first-child {
   @media (min-width: @xs-width) {
     margin-right: 33px;
+  }
+
+  @media (min-width: @md-width) {
+    margin-right: 63px;
   }
 }
 
@@ -417,7 +448,7 @@
   }
 
   @media (min-width: @md-width) {
-    top: -50px;
+    top: -95px;
   }
 }
 

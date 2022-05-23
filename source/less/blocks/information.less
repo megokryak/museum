@@ -46,8 +46,18 @@
   }
 
   @media (min-width: @md-width) {
-    width: 289px;
-    height: 260px;
+    display: none;
+  }
+}
+
+.information__logo-big-svg {
+  display: none;
+
+  @media (min-width: @md-width) {
+    display: block;
+    width: 290px;
+    height: 262px;
+    margin-top: 54px;
   }
 }
 
@@ -65,5 +75,10 @@
 
   @media (min-width: @sm-width) {
     padding: 0 112px;
+  }
+
+  @media (min-width: @md-width) {
+    padding: 0 250px;
+    margin: 31px 0 0 0;
   }
 }
