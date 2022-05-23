@@ -16,6 +16,10 @@
     padding-top: 9px;
     padding-bottom: 9px;
   }
+
+  @media (min-width: @gg-width) {
+    padding-bottom: 8px;
+  }
 }
 
 .header__wrapper-container {
@@ -38,6 +42,7 @@
 
   @media (min-width: @gg-width) {
     order: 1;
+    margin-left: 8px;
   }
 }
 
@@ -91,6 +96,7 @@
 
   @media (min-width: @gg-width) {
     order: 2;
+    padding: 0 0 0 9px;
   }
 }
 
@@ -261,6 +267,7 @@
 
   @media (min-width: @gg-width) {
     order: 6;
+    margin-right: 4px;
   }
 }
 
@@ -280,6 +287,22 @@
   background-color: transparent;
   border: none;
   margin-left: 53px;
+
+  @media (min-width: @xs-width) {
+    margin-left: 59px;
+  }
+
+  @media (min-width: @sm-width) {
+    margin-left: 56px;
+  }
+
+  @media (min-width: @md-width) {
+    margin-left: 108px;
+  }
+
+  @media (min-width: @bg-width) {
+    margin-left: 127px;
+  }
 }
 
 .header__toggle-svg {

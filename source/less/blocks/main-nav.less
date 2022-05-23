@@ -6,8 +6,16 @@
   right: 0;
   background-color: @bgMenu;
 
+  @media (min-width: @xs-width) {
+    top: 73px;
+  }
+
+  @media (min-width: @md-width) {
+    top: 78px;
+  }
+
   @media (min-width: @bg-width) {
-    top: 106px;
+    top: 90px;
   }
 
   @media (min-width: @gg-width) {
@@ -20,6 +28,7 @@
 
   @media (min-width: @gg-width) {
     display: block;
+    margin: 5px 0 0 54px;
   }
 }
 
@@ -84,7 +93,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -56px;
+    bottom: -38px;
     height: 1px;
     border-bottom: 1px solid @activeColor;
   }
