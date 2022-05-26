@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Museum</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+    <!--Header start-->
+    <header class="header">
+      <div class="header__wrapper-container container">
+        <a class="header__logo">
+          <svg class="header__logo-svg" aria-hidden="true" focusable="false" width="47" height="42" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#logo-mobile"></use>
+          </svg>
+          <svg class="header__logo-svg--xs" aria-hidden="true" focusable="false" width="176" height="31" viewBox="0 0 176 31" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#footer-logo"></use>
+          </svg>
+        </a>
+        <p class="header__logo-text">
+          Музей<br/>Художественного<br/>Стекла
+        </p>
+        <button class="header__change-color" type="button">
+          <span class="header__change-text">Светлая вкл.</span>
+        </button>
+        <a class="header__basket" data-col="10" data-price="15 000 ₽">
+          <svg class="header__basket-svg" aria-hidden="true" focusable="false" width="31" height="30" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#basket"></use>
+          </svg>
+        </a>
+        <a href="auth.html" class="header__auth">
+          <svg class="header__auth-svg" aria-hidden="true" focusable="false" width="28" height="34" viewBox="0 0 28 34" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#auth"></use>
+          </svg>
+        </a>
+        <button class="header__toggle" type="button">
+          <svg class="header__toggle-svg" width="40" height="13" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#toggle"></use>
+          </svg>
+          <svg class="header__close-menu header__close-menu--hide" width="22" height="22" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#close-menu"></use>
+          </svg>
+          <span class="visually-hidden">Открыть меню/Закрыть меню</span>
+        </button>
+        <!--Main Menu start-->
+        <nav class="header__navigation main-nav main-nav--closed">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html" class="main-nav__link main-nav__link--active">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="timetable.html" class="main-nav__link">Расписание</a>
+              </li>
+              <li class="main-nav__item ">
+                <a href="#" class="main-nav__link main-nav__link--toggle main-nav__link--open">Музей</a>
+                <ul class="main-nav__sublist main-nav__sublist--close">
+                  <li class="main-nav__subitem">
+                    <a href="museum.html" class="main-nav__link">О музее</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__link">Новости</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__link">Полезные статьи</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__link">Контакты</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a href="shop.html" class="main-nav__link">Магазин сувениров</a>
+              </li>
+            </ul>
+            <button class="main-nav__change-color" type="button">Светлая вкл.</button>
+          </div>
+        </nav>
+        <!--Main Menu end-->
+      </div>
+
+    </header>
+    <!--Header end-->
+
+    <!--Main start-->
+    <main class="tickets">
+
+    </main>
+    <!--Main end-->
+    <!-- Footer start -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__contacts">
+          <div class="footer__wrapper-contacts">
+            <h2 class="footer__title">Контакты</h2>
+            <a href="tel:+79890828282" class="footer__phone">+7 (989) 082-82-82</a>
+            <a href="mailto:info@marshumov.com" class="footer__email">info@marshumov.com</a>
+          </div>
+          <div class="footer__wrapper-address">
+            <h2 class="footer__title">Наш адрес</h2>
+            <address class="footer__address">ул. Карла Маркса, 71, п. г. т. Гвардейское, Россия</address>
+          </div>
+          <div class="footer__wrapper-data-time">
+            <h2 class="footer__title">Режим работы</h2>
+            <div class="footer__date-time">
+              <span>понедельник-вторник выходной,</span>
+              <span>среда-пятница с 11.00 до 18.00,</span>
+              <span>суббота-воскресенье с 11.00 до 19.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__map">
+      </div>
+      <div class="footer__wrapper-container container">
+        <ul class="footer__menu-list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Главная</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Выставки и события</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Новости</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Магазин</a>
+          </li>
+        </ul>
+        <a href="#" class="footer__logo">
+          <svg class="footer__logo-svg" aria-hidden="true" focusable="false" width="153" height="27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#footer-logo"></use>
+          </svg>
+        </a>
+        <p class="footer__logo-text">
+          Музей<br/>Художественного<br/>Стекла
+        </p>
+        <a href="#" class="footer__policy">Политика конфиденциальности</a>
+        <div class="footer__wrapper-socials">
+          <ul class="footer__socials">
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">ВКонтакте</a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">Instagram</a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">Facebook</a>
+            </li>
+          </ul>
+          <button class="footer__button-up" type="button">Наверх</button>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
