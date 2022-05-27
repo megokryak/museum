@@ -84,7 +84,41 @@
 
     <!--Main start-->
     <main class="tickets">
+      <ul class="tickets__breadcrumbs breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Билеты</a>
+        </li>
+      </ul>
+      <section class="tickets__event event">
+        <picture>
+          <source media="(min-width: 600px)" srcset="img/event600.jpg 1x, img/event600@2x.jpg 2x">
+          <img src="img/event375@2x.jpg" srcset="img/event375@2x.jpg" alt="Фото события" width="345" height="238" class="event__img">
+        </picture>
+        <h2 class="event__title">Песня чудовищного типа»</h2>
+        <date class="evet__date">17.07.2021</date>
+        <button class="event__change-date">Выбрать другую дату</button>
+      </section>
+      <section class="tickets__order-data order-data">
+        <form action="#" class="order-data__form" method="post">
+          <fieldset class="order-data__fieldset">
+            <legend class="visually-hidden">Информация пользователя</legend>
+            <h2 class="order-data__title">Контактные данные</h2>
+            <label class="order-data__label">
+              <input type="checkbox" class="order-data__email" name="email" type="email" placeholder="E-mail" required>
+            </label>
+            <label class="order-data__label">
+              <input class="order-data__phone" type="tel" name="phone" placeholder="Телефон" required>
+            </label>
+          </fieldset>
+          <fieldset class="order-data__fieldset">
+            <legend class="visually-hidden">Информация заказа</legend>
 
+          </fieldset>
+        </form>
+      </section>
     </main>
     <!--Main end-->
     <!-- Footer start -->
