@@ -84,109 +84,75 @@
 
     <!--Main start-->
     <main class="tickets">
-      <ul class="tickets__breadcrumbs breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a href="#" class="breadcrumbs__link">Главная</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a href="#" class="breadcrumbs__link">Билеты</a>
-        </li>
-      </ul>
-      <section class="tickets__event event">
-        <picture>
-          <source media="(min-width: 600px)" srcset="img/event600.jpg 1x, img/event600@2x.jpg 2x">
-          <img src="img/event375@2x.jpg" srcset="img/event375@2x.jpg" alt="Фото события" width="345" height="238" class="event__img">
-        </picture>
-        <h2 class="event__title">Песня чудовищного типа»</h2>
-        <date class="evet__date">17.07.2021</date>
-        <button class="event__change-date">Выбрать другую дату</button>
-      </section>
-      <section class="tickets__order-data order-data">
-        <form action="#" class="order-data__form" method="post">
-          <fieldset class="order-data__fieldset">
-            <legend class="visually-hidden">Информация пользователя</legend>
-            <h2 class="order-data__title">Контактные данные</h2>
-            <label class="order-data__label">
-              <input type="checkbox" class="order-data__email" name="email" type="email" placeholder="E-mail" required>
-            </label>
-            <label class="order-data__label">
-              <input class="order-data__phone" type="tel" name="phone" placeholder="Телефон" required>
-            </label>
-          </fieldset>
-          <fieldset class="order-data__fieldset">
-            <legend class="visually-hidden">Информация заказа</legend>
-
-          </fieldset>
-        </form>
-      </section>
-    </main>
-    <!--Main end-->
-    <!-- Footer start -->
-    <footer class="footer">
-      <div class="footer__container container">
-        <div class="footer__contacts">
-          <div class="footer__wrapper-contacts">
-            <h2 class="footer__title">Контакты</h2>
-            <a href="tel:+79890828282" class="footer__phone">+7 (989) 082-82-82</a>
-            <a href="mailto:info@marshumov.com" class="footer__email">info@marshumov.com</a>
-          </div>
-          <div class="footer__wrapper-address">
-            <h2 class="footer__title">Наш адрес</h2>
-            <address class="footer__address">ул. Карла Маркса, 71, п. г. т. Гвардейское, Россия</address>
-          </div>
-          <div class="footer__wrapper-data-time">
-            <h2 class="footer__title">Режим работы</h2>
-            <div class="footer__date-time">
-              <span>понедельник-вторник выходной,</span>
-              <span>среда-пятница с 11.00 до 18.00,</span>
-              <span>суббота-воскресенье с 11.00 до 19.00</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer__map">
-      </div>
-      <div class="footer__wrapper-container container">
-        <ul class="footer__menu-list">
-          <li class="footer__item">
-            <a href="#" class="footer__link">Главная</a>
+      <div class="tickets__container container">
+        <ul class="tickets__breadcrumbs breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Главная</a>
           </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Выставки и события</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Новости</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Магазин</a>
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Билеты</a>
           </li>
         </ul>
-        <a href="#" class="footer__logo">
-          <svg class="footer__logo-svg" aria-hidden="true" focusable="false" width="153" height="27" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#footer-logo"></use>
-          </svg>
-        </a>
-        <p class="footer__logo-text">
-          Музей<br/>Художественного<br/>Стекла
-        </p>
-        <a href="#" class="footer__policy">Политика конфиденциальности</a>
-        <div class="footer__wrapper-socials">
-          <ul class="footer__socials">
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-link">ВКонтакте</a>
-            </li>
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-link">Instagram</a>
-            </li>
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-link">Facebook</a>
-            </li>
-          </ul>
-          <button class="footer__button-up" type="button">Наверх</button>
-        </div>
+        <section class="tickets__event event">
+          <picture>
+            <source media="(min-width: 600px)" srcset="img/event600.jpg 1x, img/event600@2x.jpg 2x">
+            <img src="img/event375@2x.jpg" srcset="img/event375@2x.jpg" alt="Фото события" width="345" height="238" class="event__img">
+          </picture>
+          <div class="event__wrapper-infromation">
+            <h2 class="event__title">Песня чудовищного типа»</h2>
+            <date class="event__date">17.07.2021</date>
+            <button class="event__change-date" type="button">Выбрать другую дату</button>
+          </div>
+        </section>
+        <section class="tickets__order-data order-data">
+          <form action="#" class="order-data__form" method="post">
+            <fieldset class="order-data__fieldset">
+              <legend class="visually-hidden">Информация пользователя</legend>
+              <h2 class="order-data__title">Контактные данные</h2>
+              <label class="order-data__label">
+                <input type="text" class="order-data__email" name="email" type="email" placeholder="E-mail" required>
+              </label>
+              <label class="order-data__label">
+                <input class="order-data__phone" type="tel" name="phone" placeholder="Телефон" required>
+              </label>
+            </fieldset>
+            <fieldset class="order-data__fieldset">
+              <legend class="visually-hidden">Информация о заказе</legend>
+              <h2 class="order-data__title">Билеты</h2>
+              <div class="order-data__wrapper">
+                <label class="order-data__label">
+                  <input class="order-data__name" type="text" name="name" placeholder="Имя" required>
+                </label>
+                <div class="order-data__wrapper-type-ticket">
+                  <a href="#" class="order-data__select">Основной билет</a>
+                  <ul class="order-data__option-list">
+                    <li class="order-data__option-item">
+                      <a href="#" class="order-data__option-link">Основной билет</a>
+                    </li>
+                    <li class="order-data__option-item">
+                      <a href="#" class="order-data__option-link">Не основной билет</a>
+                    </li>
+                  </ul>
+                </div>
+                <p class="order-data__price">200 руб.</p>
+                <button class="order-data__remove-ticket" type="button">
+                  <span class="visually-hidden">Удалить</span>
+                  <svg  aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#close-ticket"></use>
+                  </svg>
+                </button>
+              </div>
+            </fieldset>
+            <p class="order-data__amount">Билет <span>1 из 50</span></p>
+            <button class="order-data__add" type="button">
+              <span>Добавить билет</span>
+            </button>
+            <a href="#" class="order-data__pay">Оплатить</a>
+          </form>
+        </section>
       </div>
-    </footer>
-    <!-- Footer end -->
+    </main>
+    <!--Main end-->
 
     <script src="./js/main.js" type="module"></script>
   </body>

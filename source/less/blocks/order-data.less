@@ -1,0 +1,190 @@
+.order-data__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  position: relative;
+}
+
+.order-data__title {
+  margin: 0;
+  padding: 0;
+  font-family: "NeueMachina", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  color: @textColor;
+}
+
+.order-data__email,
+.order-data__phone {
+  display: block;
+  width: 100%;
+  padding: 0 0 14px 0;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.order-data__email::placeholder,
+.order-data__phone::placeholder {
+  color: @noActiveCalendar;
+}
+
+.order-data__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 33px 15px 31px 15px;
+  background-color: @bgMenu;
+}
+
+.order-data__name {
+  display: block;
+  width: 100%;
+  padding: 0 0 14px 0;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.order-data__type-ticket {
+  display: block;
+  width: 100%;
+  padding: 0 0 14px 0;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: @textColor;
+}
+
+
+.order-data__select {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0 21px 15px 0;
+  color: @textColor;
+  font-size: 18px;
+  line-height: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+
+.order-data__select::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 21px;
+  height: 11px;
+  background-image: url("../img/select-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -5px 0 0 0;
+}
+
+.order-data__option-list {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.order-data__option-list a {
+  display: block;
+  color: @textColor;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0 0 15px 0;
+  text-decoration: none;
+}
+
+.order-data__price {
+  margin: 0;
+  padding: 0;
+  font-family: "NeueMachina", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 27px;
+  color: @textColor;
+}
+
+.order-data__amount {
+  font-size: 16px;
+  line-height: 24px;
+  color: @textColor;
+}
+
+.order-data__amount span {
+  color: @activeColor;
+}
+
+.order-data__remove-ticket {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: none;
+}
+
+.order-data__add {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  color: @textColor;
+  font-size: 20px;
+  line-height: 25px;
+  background-color: @bgMenu;
+  border: none;
+}
+
+.order-data__add span {
+  position: relative;
+  padding-right: 29px;
+}
+
+.order-data__add span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 19px;
+  height: 19px;
+  margin: -8px 0 0 0;
+  background-image: url("../img/add.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.order-data__pay {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  color: @textColor;
+  font-size: 20px;
+  line-height: 25px;
+  background-color: @activeColor;
+  border: none;
+  text-decoration: none;
+}
