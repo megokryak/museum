@@ -30,6 +30,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  @media (min-width: @bg-width) {
+    width: 870px;
+    flex-basis: 870px;
+  }
 }
 
 .order-data__fieldset:nth-child(2) {
@@ -340,6 +345,10 @@
     margin: 18px 22px 0 auto;
     flex-basis: 273px;
   }
+
+  @media (min-width: @md-width) {
+    margin: 18px 28px 0 auto;
+  }
 }
 
 .order-data__add span {
@@ -390,5 +399,9 @@
   @media (min-width: @md-width) {
     margin: 18px 61px 0 0;
     flex-basis: 270px;
+  }
+
+  @media (min-width: @bg-width) {
+    margin: 18px 0 0 0;
   }
 }
