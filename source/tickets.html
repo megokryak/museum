@@ -109,14 +109,14 @@
             <fieldset class="order-data__fieldset">
               <legend class="visually-hidden">Информация пользователя</legend>
               <h2 class="order-data__title">Контактные данные</h2>
-              <label class="order-data__label">
+              <label class="order-data__label order-data__label--email">
                 <input type="text" class="order-data__email" name="email" type="email" placeholder="E-mail" required>
               </label>
-              <label class="order-data__label">
+              <label class="order-data__label order-data__label--phone">
                 <input class="order-data__phone" type="tel" name="phone" placeholder="Телефон" required>
               </label>
             </fieldset>
-            <fieldset class="order-data__fieldset">
+            <fieldset class="order-data__fieldset order-data__fieldset--information">
               <legend class="visually-hidden">Информация о заказе</legend>
               <h2 class="order-data__title">Билеты</h2>
               <div class="order-data__wrapper">
@@ -142,12 +142,12 @@
                   </svg>
                 </button>
               </div>
+              <p class="order-data__amount">Билет <span>1 из 50</span></p>
+              <button class="order-data__add" type="button">
+                <span>Добавить билет</span>
+              </button>
+              <button type="submit" class="order-data__pay">Оплатить</button>
             </fieldset>
-            <p class="order-data__amount">Билет <span>1 из 50</span></p>
-            <button class="order-data__add" type="button">
-              <span>Добавить билет</span>
-            </button>
-            <a href="#" class="order-data__pay">Оплатить</a>
           </form>
         </section>
       </div>
