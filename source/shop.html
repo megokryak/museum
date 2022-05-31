@@ -83,72 +83,82 @@
     <!--Header end-->
 
     <!--Main start-->
-    <main class="tickets">
-      <div class="tickets__container container">
-        <ul class="tickets__breadcrumbs breadcrumbs">
+    <main class="main-shop">
+      <div class="main-shop__container container">
+        <ul class="shop__breadcrumbs breadcrumbs">
           <li class="breadcrumbs__item">
             <a href="#" class="breadcrumbs__link">Главная</a>
           </li>
           <li class="breadcrumbs__item">
-            <a href="#" class="breadcrumbs__link">Билеты</a>
+            <a href="#" class="breadcrumbs__link">Магазин</a>
           </li>
         </ul>
-        <section class="tickets__event event">
-          <picture>
-            <source media="(min-width: 600px)" srcset="img/event600.jpg 1x, img/event600@2x.jpg 2x">
-            <img src="img/event375.jpg" srcset="img/event375@2x.jpg" alt="Фото события" width="345" height="238" class="event__img">
-          </picture>
-          <div class="event__wrapper-infromation">
-            <h2 class="event__title">Песня чудовищного типа»</h2>
-            <date class="event__date">17.07.2021</date>
-            <button class="event__change-date" type="button">Выбрать другую дату</button>
-          </div>
-        </section>
-        <section class="tickets__order-data order-data">
-          <form action="#" class="order-data__form" method="post">
-            <fieldset class="order-data__fieldset">
-              <legend class="visually-hidden">Информация пользователя</legend>
-              <h2 class="order-data__title">Контактные данные</h2>
-              <label class="order-data__label order-data__label--email">
-                <input type="text" class="order-data__email" name="email" type="email" placeholder="E-mail" required>
-              </label>
-              <label class="order-data__label order-data__label--phone">
-                <input class="order-data__phone" type="tel" name="phone" placeholder="Телефон" required>
-              </label>
-            </fieldset>
-            <fieldset class="order-data__fieldset order-data__fieldset--information">
-              <legend class="visually-hidden">Информация о заказе</legend>
-              <h2 class="order-data__title">Билеты</h2>
-              <div class="order-data__wrapper">
-                <label class="order-data__label">
-                  <input class="order-data__name" type="text" name="name" placeholder="Имя" required>
+        <section class="main-shop__category category">
+          <h2 class="category__title">Изделия из стекла</h2>
+          <a href="#" class="category__filter">Фильры</a>
+          <div class="category__filters-block filters-block">
+            <h3 class="filters-block__title">Категория</h3>
+            <ul class="filters-block__list">
+              <li class="filters-block__item">
+                <label class="filters-block__control">
+                  <input type="checkbox" class="visually-hidden filters-block__input" name="glasess" checked>
+                  <span class="filters-block__control-mark"></span>
+                  <span class="filters-block__control-label">Бокалы (7)</span>
                 </label>
-                <div class="order-data__wrapper-type-ticket">
-                  <a href="#" class="order-data__select">Основной билет</a>
-                  <ul class="order-data__option-list">
-                    <li class="order-data__option-item">
-                      <a href="#" class="order-data__option-link">Основной билет</a>
-                    </li>
-                    <li class="order-data__option-item">
-                      <a href="#" class="order-data__option-link">Не основной билет</a>
-                    </li>
-                  </ul>
-                </div>
-                <p class="order-data__price">200 руб.</p>
-                <button class="order-data__remove-ticket" type="button">
-                  <span class="visually-hidden">Удалить</span>
-                  <svg  aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#close-ticket"></use>
-                  </svg>
-                </button>
-              </div>
-              <p class="order-data__amount">Билет <span>1 из 50</span></p>
-              <button class="order-data__add" type="button">
-                <span>Добавить билет</span>
-              </button>
-              <button type="submit" class="order-data__pay">Оплатить</button>
-            </fieldset>
+              </li>
+              <li class="filters-block__item">
+                <label class="filters-block__control">
+                  <input type="checkbox" class="visually-hidden filters-block__input" name="candlesticks" checked>
+                  <span class="filters-block__control-mark"></span>
+                  <span class="filters-block__control-label">Подсвечники (6)</span>
+                </label>
+              </li>
+              <li class="filters-block__item">
+                <label class="filters-block__control">
+                  <input type="checkbox" class="visually-hidden filters-block__input" name="accessories">
+                  <span class="filters-block__control-mark"></span>
+                  <span class="filters-block__control-label">Сувениры и аксессуары (11)</span>
+                </label>
+              </li>
+              <li class="filters-block__item">
+                <label class="filters-block__control">
+                  <input type="checkbox" class="visually-hidden filters-block__input" name="creative">
+                  <span class="filters-block__control-mark"></span>
+                  <span class="filters-block__control-label">Творческие работы (6)</span>
+                </label>
+              </li>
+            </ul>
+            <h3 class="filters-block__title">Исходная сортировка</h3>
+            <a href="#" class="filters-block__sort">По популярности</a>
+            <ul class="filters-block__sort-list">
+              <li class="filters-block__sort-item">
+                <a href="#" class="filters-block__sort-link">По популярности</a>
+              </li>
+              <li class="filters-block__sort-item">
+                <a href="#" class="filters-block__sort-link">Не по популярности</a>
+              </li>
+            </ul>
+          </div>
+          <form action="#"  method="get" class="category__search search">
+            <label for="search__input" class="visually-hidden">Поиск по сайту</label>
+            <input type="text" class="search__input" id="search__input" name="search-product" placeholder="Поиск товара">
+            <button class="search__submit" type="submit">Найти</button>
           </form>
+        </section>
+        <section class="main-shop__products products">
+          <h2 class="visually-hidden">Товары</h2>
+          <div class="products__card-product card-product">
+            <picture>
+              <!-- <source media="(min-width: 600px)" srcset="img/event600.jpg 1x, img/event600@2x.jpg 2x"> -->
+              <img src="img/Products/product1.jpg" srcset="img/Products/product1@2x.jpg" alt="Подсвечник «Грация»" width="345" height="290" class="card-product__img">
+            </picture>
+            <a href="#" class="card-product__link">
+              <h2 class="card-product__title">Подсвечник «Грация»</h2>
+            </a>
+            <p class="card-product__price">9 999 ₽</p>
+            <a href="#" class="card-product__more">Подробнее</a>
+            <button class="card-product__add-to-car">Добавить в корзину</button>
+          </div>
         </section>
       </div>
     </main>

@@ -1,0 +1,28 @@
+.search {
+  display: block;
+  padding: 0 55px 0 0;
+  height: 55px;
+  position: relative;
+}
+
+.search::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 50%;
+  right: 0;
+  margin: -27.5px 0 0 0;
+  background-color: @bgMenu;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search__input {
+  display: none;
+}
+
+.search__submit {
+  display: none;
+}
