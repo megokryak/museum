@@ -1,3 +1,9 @@
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .category__title {
   margin: 0;
   padding: 0;
@@ -7,11 +13,12 @@
   font-size: 26px;
   line-height: 30px;
   color: @textColor;
+  flex-basis: 100%;
 }
 
 .category__filter {
   display: block;
-  margin: 0;
+  margin: 20px 0 0 0;
   padding: 15px 0 15px 70px;
   font-family: "GothamPro", "Arial", sans-serif;
   font-weight: 400;
@@ -34,4 +41,8 @@
   background-image: url("../img/filters.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.category__search {
+  margin: 20px 0 0 0;
 }

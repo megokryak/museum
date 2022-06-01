@@ -1,14 +1,76 @@
+.card-product {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card-product__item {
+  background-color: @bgMenu;
+  padding: 0 0 29px 0;
+}
+
+.card-product__item:not(:first-child) {
+  margin: 19px 0 0 0;
+}
+
+.card-product__wrapper {
+  padding: 0 20px;
+}
+
 .card-product__link {
   display: block;
   text-decoration: none;
 }
 
 .card-product__title {
-  margin: 0;
+  margin: 29px 0 0 0;
   font-family: "GothamPro", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: @textColor;
   text-decoration: none;
+}
+
+.card-product__price {
+  margin: 26px 0 0 0;
+  padding: 0;
+  font-family: "GothamPro", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: @textColor;
+}
+
+.card-product__more {
+  margin: 23px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: @textColor;
+  text-decoration: none;
+  width: 100%;
+  padding: 15px 5px;
+  background-color: @bgColor;
+  box-sizing: border-box;
+}
+
+.card-product__add-to-car {
+  margin: 14px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "GothamPro", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: @textColor;
+  text-decoration: none;
+  width: 100%;
+  padding: 15px 5px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
 }
