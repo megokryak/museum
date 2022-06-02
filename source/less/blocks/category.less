@@ -14,6 +14,16 @@
   line-height: 30px;
   color: @textColor;
   flex-basis: 100%;
+
+  @media (min-width: @xs-width) {
+    font-size: 36px;
+    line-height: 41px;
+    padding-left: 5px;
+  }
+
+  @media (min-width: @sm-width) {
+    padding-left: 0;
+  }
 }
 
 .category__filter {
@@ -27,6 +37,14 @@
   color: @textColor;
   text-decoration: none;
   position: relative;
+
+  @media (min-width: @xs-width) {
+    margin: 37px 0 0 4px;
+  }
+
+  @media (min-width: @sm-width) {
+    margin: 37px 0 0 0;
+  }
 }
 
 .category__filter::before {
@@ -45,4 +63,12 @@
 
 .category__search {
   margin: 20px 0 0 0;
+
+  @media (min-width: @xs-width) {
+    margin: 33px 4px 0 0;
+  }
+
+  @media (min-width: @sm-width) {
+    margin: 33px 0 0 0;
+  }
 }
