@@ -8,6 +8,20 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px 30px;
   }
+
+  @media (min-width: @md-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: @bg-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 15px;
+  }
+
+  @media (min-width: @gg-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px 30px;
+  }
 }
 
 .card-product__item {
@@ -16,6 +30,15 @@
 
   @media (min-width: @xs-width) {
     min-width: 240px;
+  }
+
+  @media (min-width: @bg-width) {
+    min-width: 420px;
+    padding: 0 0 20px 0;
+  }
+
+  @media (min-width: @gg-width) {
+    padding: 0 0 14px 0;
   }
 }
 
@@ -41,6 +64,10 @@
   @media (min-width: @sm-width) {
     min-height: 309px;
   }
+
+  @media (min-width: @bg-width) {
+    min-height: 529px;
+  }
 }
 
 .card-product__wrapper {
@@ -52,6 +79,13 @@
 
   @media (min-width: @sm-width) {
     padding: 0 20px;
+  }
+
+  @media (min-width: @bg-width) {
+    padding: 0 17px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -66,6 +100,15 @@
 
   @media (min-width: @sm-width) {
     margin: 33px 0 0 0;
+  }
+
+  @media (min-width: @bg-width) {
+    margin: 30px 0 0 0;
+    width: 100%;
+  }
+
+  @media (min-width: @gg-width) {
+    margin: 25px 0 0 0;
   }
 }
 
@@ -96,6 +139,11 @@
   @media (min-width: @sm-width) {
     margin: 26px 0 0 0;
   }
+
+  @media (min-width: @bg-width) {
+    margin: 11px 0 0 0;
+    width: 100%;
+  }
 }
 
 .card-product__more {
@@ -114,6 +162,12 @@
 
   @media (min-width: @sm-width) {
     padding: 20px 5px;
+  }
+
+  @media (min-width: @bg-width) {
+    width: 164px;
+    height: 47px;
+    margin: 15px 0 0 0;
   }
 }
 
@@ -136,5 +190,11 @@
 
   @media (min-width: @sm-width) {
     padding: 20px 5px;
+  }
+
+  @media (min-width: @bg-width) {
+    width: 211px;
+    height: 47px;
+    margin-top: 16px;
   }
 }

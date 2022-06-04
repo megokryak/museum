@@ -17,10 +17,31 @@
   background-image: url("../img/search.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @md-width) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+  }
 }
 
 .search__input {
   display: none;
+
+  @media (min-width: @md-width) {
+    display: block;
+    width: 227px;
+    font-family: "GothamPro", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 21px 5px 9px 0;
+  }
+
+  @media (min-width: @gg-width) {
+    width: 365px;
+  }
 }
 
 .search__submit {

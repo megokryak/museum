@@ -1,3 +1,26 @@
+.products {
+  @media (min-width: @bg-width) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
 .products__card-product {
   padding: 0 0 20px 0;
+
+  @media (min-width: @bg-width) {
+    flex-grow: 1;
+  }
+}
+
+.products__filters-block {
+  display: none;
+
+  @media (min-width: @bg-width) {
+    display: block;
+  }
+
+  @media (min-width: @gg-width) {
+    padding-bottom: 70px;
+  }
 }
