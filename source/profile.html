@@ -88,21 +88,21 @@
         <section class="profile__personal-data personal-data">
           <h2 class="personal-data__title">Мой аккаунт</h2>
           <ul class="personal-data__list">
-            <li class="personal-data__item">
-              <a href="#" class="personal-data__link">Личные данные</a>
+            <li class="personal-data__item personal-data__item--active">
+              <a href="#" class="personal-data__link personal-data__link--profile">Личные данные</a>
             </li>
             <li class="personal-data__item">
-              <a href="#" class="personal-data__link">История заказов</a>
+              <a href="#" class="personal-data__link personal-data__link--history">История заказов</a>
             </li>
             <li class="personal-data__item">
-              <a href="#" class="personal-data__link">Оставленные отзывы</a>
+              <a href="#" class="personal-data__link personal-data__link--review">Оставленные отзывы</a>
             </li>
           </ul>
           <form action="" class="personal-data__form">
             <fieldset class="personal-data__fieldset">
               <legend class="visually-hidden">Профиль пользователя</legend>
               <div class="personal-data__wrapper-avatar">
-                <input type="file" id="id-photo" class="persoanl-data__input-avater">
+                <input type="file" id="id-photo" class="persoanl-data__input-avatar">
                 <picture>
                   <!-- <source media="(min-width: 600px)" srcset="img/event600.jpg 1x, img/event600@2x.jpg 2x"> -->
                   <img src="img/Avatars/avatar.jpg" srcset="img/Avatars/avatar@2x.jpg" alt="Аватар пользователя" width="80" height="80" class="personal-data__avatar-img">
@@ -110,57 +110,57 @@
                 <label for="id-photo" class="personaml-data__label-avatar">Изменить</label>
               </div>
             </fieldset>
-            <fieldset class="personal-data__fieldset">
+            <fieldset class="personal-data__fieldset personal-data__fieldset--data">
               <legend class="visually-hidden">Персональные данные</legend>
               <h2 class="personal-data__title">Персональные данные</h2>
               <a href="#" class="personal-data__change-link">Изменить</a>
               <label class="personal-data__label personal-data__label--name">
                 <span>Имя</span>
-                <input type="text" name="name" class="personal-data__input personal-data__input--name">
+                <input type="text" name="name" class="personal-data__input personal-data__input--name" placeholder="Иван">
               </label>
               <label class="personal-data__label personal-data__label--surname">
                 <span>Фамилия</span>
-                <input type="text" name="surname" class="personal-data__input personal-data__input--surname">
+                <input type="text" name="surname" class="personal-data__input personal-data__input--surname" placeholder="Иванов">
               </label>
               <label class="personal-data__label personal-data__label--patronymic">
                 <span>Отчество</span>
-                <input type="text" name="patronymic" class="personal-data__input personal-data__input--patronymic">
+                <input type="text" name="patronymic" class="personal-data__input personal-data__input--patronymic" placeholder="Иванович">
               </label>
               <label class="personal-data__label personal-data__label--phone">
                 <span>Телефон</span>
-                <input type="tel" name="phone" class="personal-data__input personal-data__input--phone">
+                <input type="tel" name="phone" class="personal-data__input personal-data__input--phone" placeholder="+7 (961) 217 06 54">
               </label>
               <label class="personal-data__label personal-data__label--email">
                 <span>Email</span>
-                <input type="email" name="email" class="personal-data__input personal-data__input--email">
+                <input type="email" name="email" class="personal-data__input personal-data__input--email" placeholder="slmnsrrbk@gmail.com">
               </label>
             </fieldset>
-            <fieldset class="personal-data__fieldset">
+            <fieldset class="personal-data__fieldset personal-data__fieldset--address">
               <legend class="visually-hidden">Адрес доставки</legend>
               <h2 class="personal-data__title">Адрес доставки</h2>
               <a href="#" class="personal-data__change-link">Изменить</a>
               <label class="personal-data__label personal-data__label--country">
                 <span>Страна</span>
-                <input type="text" name="country" class="personal-data__input personal-data__input--country">
+                <input type="text" name="country" class="personal-data__input personal-data__input--country" placeholder="Россия">
               </label>
               <label class="personal-data__label personal-data__label--city">
                 <span>Город</span>
-                <input type="text" name="city" class="personal-data__input personal-data__input--city">
+                <input type="text" name="city" class="personal-data__input personal-data__input--city" placeholder="Новосибирск">
               </label>
               <label class="personal-data__label personal-data__label--region">
                 <span>Край/область/регион</span>
-                <input type="text" name="region" class="personal-data__input personal-data__input--region">
+                <input type="text" name="region" class="personal-data__input personal-data__input--region" placeholder="Новосибирская">
               </label>
               <label class="personal-data__label personal-data__label--home">
                 <span>Улица, дом, квартира</span>
-                <input type="text" name="home" class="personal-data__input personal-data__input--home">
+                <input type="text" name="home" class="personal-data__input personal-data__input--home" placeholder="ул. Фрунзе, д. 238+">
               </label>
               <label class="personal-data__label personal-data__label--id">
                 <span>Почтовый индекс</span>
-                <input type="number" name="id" class="personal-data__input personal-data__input--id">
+                <input type="number" name="id" class="personal-data__input personal-data__input--id" placeholder="630010">
               </label>
             </fieldset>
-            <fieldset class="personal-data__fieldset">
+            <fieldset class="personal-data__fieldset personal-data__fieldset--password">
               <legend class="visually-hidden">Пароль</legend>
               <h2 class="personal-data__title">Пароль</h2>
               <a href="#" class="personal-data__change-link">Изменить</a>
