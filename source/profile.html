@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Museum</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+    <!--Header start-->
+    <header class="header">
+      <div class="header__wrapper-container container">
+        <a class="header__logo">
+          <svg class="header__logo-svg" aria-hidden="true" focusable="false" width="47" height="42" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#logo-mobile"></use>
+          </svg>
+          <svg class="header__logo-svg--xs" aria-hidden="true" focusable="false" width="176" height="31" viewBox="0 0 176 31" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#footer-logo"></use>
+          </svg>
+        </a>
+        <p class="header__logo-text">
+          Музей<br/>Художественного<br/>Стекла
+        </p>
+        <button class="header__change-color" type="button">
+          <span class="header__change-text">Светлая вкл.</span>
+        </button>
+        <a class="header__basket" data-col="10" data-price="15 000 ₽">
+          <svg class="header__basket-svg" aria-hidden="true" focusable="false" width="31" height="30" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#basket"></use>
+          </svg>
+        </a>
+        <a href="auth.html" class="header__auth">
+          <svg class="header__auth-svg" aria-hidden="true" focusable="false" width="28" height="34" viewBox="0 0 28 34" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#auth"></use>
+          </svg>
+        </a>
+        <button class="header__toggle" type="button">
+          <svg class="header__toggle-svg" width="40" height="13" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#toggle"></use>
+          </svg>
+          <svg class="header__close-menu header__close-menu--hide" width="22" height="22" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#close-menu"></use>
+          </svg>
+          <span class="visually-hidden">Открыть меню/Закрыть меню</span>
+        </button>
+        <!--Main Menu start-->
+        <nav class="header__navigation main-nav main-nav--closed">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html" class="main-nav__link main-nav__link--active">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="timetable.html" class="main-nav__link">Расписание</a>
+              </li>
+              <li class="main-nav__item ">
+                <a href="#" class="main-nav__link main-nav__link--toggle main-nav__link--open">Музей</a>
+                <ul class="main-nav__sublist main-nav__sublist--close">
+                  <li class="main-nav__subitem">
+                    <a href="museum.html" class="main-nav__link">О музее</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__link">Новости</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__link">Полезные статьи</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__link">Контакты</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a href="shop.html" class="main-nav__link">Магазин сувениров</a>
+              </li>
+            </ul>
+            <button class="main-nav__change-color" type="button">Светлая вкл.</button>
+          </div>
+        </nav>
+        <!--Main Menu end-->
+      </div>
+
+    </header>
+    <!--Header end-->
+
+    <!--Main start-->
+    <main class="profile">
+      <div class="profile__container container">
+        <section class="profile__personal-data personal-data">
+          <h2 class="personal-data__title">Мой аккаунт</h2>
+          <ul class="personal-data__list">
+            <li class="personal-data__item">
+              <a href="#" class="personal-data__link">Личные данные</a>
+            </li>
+            <li class="personal-data__item">
+              <a href="#" class="personal-data__link">История заказов</a>
+            </li>
+            <li class="personal-data__item">
+              <a href="#" class="personal-data__link">Оставленные отзывы</a>
+            </li>
+          </ul>
+          <form action="" class="personal-data__form">
+            <fieldset class="personal-data__fieldset">
+              <legend class="visually-hidden">Профиль пользователя</legend>
+              <div class="personal-data__wrapper-avatar">
+                <input type="file" id="id-photo" class="persoanl-data__input-avater">
+                <picture>
+                  <!-- <source media="(min-width: 600px)" srcset="img/event600.jpg 1x, img/event600@2x.jpg 2x"> -->
+                  <img src="img/Avatars/avatar.jpg" srcset="img/Avatars/avatar@2x.jpg" alt="Аватар пользователя" width="80" height="80" class="personal-data__avatar-img">
+                </picture>
+                <label for="id-photo" class="personaml-data__label-avatar">Изменить</label>
+              </div>
+            </fieldset>
+            <fieldset class="personal-data__fieldset">
+              <legend class="visually-hidden">Персональные данные</legend>
+              <h2 class="personal-data__title">Персональные данные</h2>
+              <a href="#" class="personal-data__change-link">Изменить</a>
+              <label class="personal-data__label personal-data__label--name">
+                <span>Имя</span>
+                <input type="text" name="name" class="personal-data__input personal-data__input--name">
+              </label>
+              <label class="personal-data__label personal-data__label--surname">
+                <span>Фамилия</span>
+                <input type="text" name="surname" class="personal-data__input personal-data__input--surname">
+              </label>
+              <label class="personal-data__label personal-data__label--patronymic">
+                <span>Отчество</span>
+                <input type="text" name="patronymic" class="personal-data__input personal-data__input--patronymic">
+              </label>
+              <label class="personal-data__label personal-data__label--phone">
+                <span>Телефон</span>
+                <input type="tel" name="phone" class="personal-data__input personal-data__input--phone">
+              </label>
+              <label class="personal-data__label personal-data__label--email">
+                <span>Email</span>
+                <input type="email" name="email" class="personal-data__input personal-data__input--email">
+              </label>
+            </fieldset>
+            <fieldset class="personal-data__fieldset">
+              <legend class="visually-hidden">Адрес доставки</legend>
+              <h2 class="personal-data__title">Адрес доставки</h2>
+              <a href="#" class="personal-data__change-link">Изменить</a>
+              <label class="personal-data__label personal-data__label--country">
+                <span>Страна</span>
+                <input type="text" name="country" class="personal-data__input personal-data__input--country">
+              </label>
+              <label class="personal-data__label personal-data__label--city">
+                <span>Город</span>
+                <input type="text" name="city" class="personal-data__input personal-data__input--city">
+              </label>
+              <label class="personal-data__label personal-data__label--region">
+                <span>Край/область/регион</span>
+                <input type="text" name="region" class="personal-data__input personal-data__input--region">
+              </label>
+              <label class="personal-data__label personal-data__label--home">
+                <span>Улица, дом, квартира</span>
+                <input type="text" name="home" class="personal-data__input personal-data__input--home">
+              </label>
+              <label class="personal-data__label personal-data__label--id">
+                <span>Почтовый индекс</span>
+                <input type="number" name="id" class="personal-data__input personal-data__input--id">
+              </label>
+            </fieldset>
+            <fieldset class="personal-data__fieldset">
+              <legend class="visually-hidden">Пароль</legend>
+              <h2 class="personal-data__title">Пароль</h2>
+              <a href="#" class="personal-data__change-link">Изменить</a>
+            </fieldset>
+            <button class="personal-data__out" type="button">Выйти из аккаунта</button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <!--Main end-->
+    <!-- Footer start -->
+    <footer class="footer">
+      <div class="footer__wrapper-container container">
+        <ul class="footer__menu-list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Главная</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Выставки и события</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Новости</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Магазин</a>
+          </li>
+        </ul>
+        <a href="#" class="footer__logo">
+          <svg class="footer__logo-svg" aria-hidden="true" focusable="false" width="153" height="27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#footer-logo"></use>
+          </svg>
+        </a>
+        <p class="footer__logo-text">
+          Музей<br/>Художественного<br/>Стекла
+        </p>
+        <a href="#" class="footer__policy">Политика конфиденциальности</a>
+        <div class="footer__wrapper-socials">
+          <ul class="footer__socials">
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">ВКонтакте</a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">Instagram</a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">Facebook</a>
+            </li>
+          </ul>
+          <button class="footer__button-up" type="button">Наверх</button>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
