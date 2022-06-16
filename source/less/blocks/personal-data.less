@@ -8,6 +8,12 @@
   font-size: 26px;
   line-height: 30px;
   color: @textColor;
+
+  @media (min-width: @xs-width) {
+    font-size: 30px;
+    line-height: 34px;
+    padding-left: 5px;
+  }
 }
 
 .personal-data__list {
@@ -15,26 +21,48 @@
   padding: 21px 30px 21px 14px;
   list-style-type: none;
   background-color: @bgMenu;
+
+  @media (min-width: @xs-width) {
+    margin-left: 5px;
+    margin-top: 16px;
+    padding-left: 28px;
+  }
 }
 
 .personal-data__item {
   padding-bottom: 16px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
+
+  @media (min-width: @xs-width) {
+    padding-bottom: 21px;
+  }
 }
 
 .personal-data__item:first-child {
   margin-top: 10px;
+
+  @media (min-width: @xs-width) {
+    margin-top: 7px;
+  }
 }
 
 .personal-data__item:nth-child(2) {
   margin-top: 23px;
   padding-bottom: 21px;
+
+  @media (min-width: @xs-width) {
+    padding-bottom: 24px;
+  }
 }
 
 .personal-data__item:nth-child(3) {
   margin-top: 26px;
   padding-bottom: 22px;
+
+  @media (min-width: @xs-width) {
+    padding-bottom: 26px;
+  }
 }
 
 .personal-data__item--active a {
@@ -52,6 +80,19 @@
   color: @textColor;
   padding-left: 44px;
   position: relative;
+
+  @media (min-width: @xs-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.personal-data__item--active .personal-data__link {
+  @media (min-width: @xs-width) {
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 44px;
+  }
 }
 
 .personal-data__link::before {
@@ -68,6 +109,10 @@
   width: 27px;
   height: 34px;
   margin: -17px 0 0 0;
+
+  @media (min-width: @xs-width) {
+    margin-top: -20px;
+  }
 }
 
 .personal-data__item--active .personal-data__link--profile::before {
@@ -107,12 +152,25 @@
 
 .personal-data__form {
   margin: 51px 0 0 0;
+
+  @media (min-width: @xs-width) {
+    margin-top: 59px;
+    padding-left: 5px;
+  }
+}
+
+.personal-data__form .personal-data__title {
+  @media (min-width: @xs-width) {
+    padding-left: 0;
+    width: 360px;
+  }
 }
 
 .personal-data__fieldset {
   margin: 0;
   padding: 0;
   border: none;
+  width: 100%;
 }
 
 .personal-data__fieldset--data {
@@ -121,10 +179,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: @xs-width) {
+    margin-top: 29px;
+    justify-content: flex-start;
+  }
 }
 
 .personal-data__fieldset--address {
-  margin: 60px 0 0 0;
+  margin: 57px 0 0 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -135,8 +198,12 @@
   margin: 60px 0 0 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
+}
+
+.personal-data__fieldset--password .personal-data__title {
+  width: auto;
+  margin-right: 22px;
 }
 
 .personal-data__wrapper-avatar {
@@ -153,6 +220,22 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
+.personal-data__label--surname {
+  margin-top: 29px;
+}
+
+.personal-data__label--phone {
+  margin-top: 28px;
+}
+
+.personal-data__label--email {
+  margin-top: 30px;
+}
+
+.personal-data__label--city {
+  margin-top: 27px;
+}
+
 .personal-data__input {
   font-size: 18px;
   line-height: 30px;
@@ -161,6 +244,41 @@
   border: none;
   background-color: transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0 0 5px 0;
+  margin: 5px 0 0 0;
+}
+
+.personal-data__input--surname {
+  margin-top: 4px;
+  padding-bottom: 3px;
+}
+
+.personal-data__input--patronymic {
+  padding-bottom: 1px;
+}
+
+.personal-data__input--phone {
+  padding-bottom: 4px;
+}
+
+.personal-data__input--email {
+  padding-bottom: 3px;
+}
+
+.personal-data__input--city {
+  padding-bottom: 4px;
+}
+
+.personal-data__input--region {
+  padding-bottom: 2px;
+}
+
+.personal-data__input--home {
+  padding-bottom: 2px;
+}
+
+.personal-data__input--id {
+  padding-bottom: 2px;
 }
 
 .personal-data__input::placeholder {
@@ -196,6 +314,10 @@
   font-size: 18px;
   line-height: 30px;
   color: rgba(255, 255, 255, 0.4);
+
+  @media (min-width: @xs-width) {
+    margin-left: 18px;
+  }
 }
 
 .personal-data__out {
