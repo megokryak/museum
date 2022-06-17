@@ -13,6 +13,7 @@
     font-size: 30px;
     line-height: 34px;
     padding-left: 5px;
+    width: auto;
   }
 }
 
@@ -26,6 +27,10 @@
     margin-left: 5px;
     margin-top: 16px;
     padding-left: 28px;
+  }
+
+  @media (min-width: @sm-width) {
+    margin-top: 23px;
   }
 }
 
@@ -162,7 +167,6 @@
 .personal-data__form .personal-data__title {
   @media (min-width: @xs-width) {
     padding-left: 0;
-    width: 360px;
   }
 }
 
@@ -184,6 +188,10 @@
     margin-top: 29px;
     justify-content: flex-start;
   }
+
+  @media (min-width: @sm-width) {
+    margin-top: 39px;
+  }
 }
 
 .personal-data__fieldset--address {
@@ -192,6 +200,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: @xs-width) {
+    justify-content: flex-start;
+  }
+
+  @media (min-width: @sm-width) {
+    margin-top: 36px;
+  }
 }
 
 .personal-data__fieldset--password {
@@ -199,11 +215,21 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (min-width: @sm-width) {
+    margin-top: 64px;
+  }
 }
 
 .personal-data__fieldset--password .personal-data__title {
   width: auto;
   margin-right: 22px;
+}
+
+.personal-data__fieldset--password .personal-data__change-link {
+  @media (min-width: @sm-width) {
+    margin-left: 0;
+  }
 }
 
 .personal-data__wrapper-avatar {
@@ -218,10 +244,42 @@
   width: 100%;
   margin: 30px 0 0 0;
   color: rgba(255, 255, 255, 0.3);
+
+  @media (min-width: @xs-width) {
+    margin-top: 37px;
+  }
+
+  @media (min-width: @sm-width) {
+    width: 47%;
+    margin-top: 39px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .personal-data__label--surname {
   margin-top: 29px;
+
+  @media (min-width: @xs-width) {
+    margin-top: 26px;
+  }
+
+  @media (min-width: @sm-width) {
+    margin-left: auto;
+    margin-top: 38px;
+  }
+}
+
+.personal-data__label--patronymic {
+  @media (min-width: @xs-width) {
+    margin-top: 26px;
+  }
+
+  @media (min-width: @sm-width) {
+    width: 100%;
+    margin-top: 30px;
+    padding-right: 53%;
+  }
 }
 
 .personal-data__label--phone {
@@ -230,10 +288,61 @@
 
 .personal-data__label--email {
   margin-top: 30px;
+
+  @media (min-width: @xs-width) {
+    margin-top: 25px;
+  }
+
+  @media (min-width: @sm-width) {
+    margin-left: auto;
+    margin-top: 28px;
+  }
+}
+
+.personal-data__label--country {
+  @media (min-width: @sm-width) {
+    margin-top: 49px;
+  }
 }
 
 .personal-data__label--city {
   margin-top: 27px;
+
+  @media (min-width: @sm-width) {
+    margin-top: 49px;
+    margin-left: auto;
+  }
+}
+
+.personal-data__label--region {
+  @media (min-width: @xs-width) {
+    margin-top: 25px;
+  }
+
+  @media (min-width: @sm-width) {
+    margin-top: 29px;
+  }
+}
+
+.personal-data__label--home {
+  @media (min-width: @xs-width) {
+    margin-top: 26px;
+  }
+
+  @media (min-width: @sm-width) {
+    margin-left: auto;
+    margin-top: 29px;
+  }
+}
+
+.personal-data__label--id {
+  @media (min-width: @xs-width) {
+    margin-top: 26px;
+  }
+
+  @media (min-width: @sm-width) {
+    margin-top: 29px;
+  }
 }
 
 .personal-data__input {
@@ -246,6 +355,10 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding: 0 0 5px 0;
   margin: 5px 0 0 0;
+
+  @media (min-width: @sm-width) {
+    padding-bottom: 2px;
+  }
 }
 
 .personal-data__input--surname {
@@ -267,6 +380,10 @@
 
 .personal-data__input--city {
   padding-bottom: 4px;
+
+  @media (min-width: @sm-width) {
+    padding-bottom: 2px;
+  }
 }
 
 .personal-data__input--region {
@@ -320,6 +437,12 @@
   }
 }
 
+.personal-data__break {
+  display: block;
+  flex-basis: 100%;
+  height: 0;
+}
+
 .personal-data__out {
   display: block;
   width: 100%;
@@ -335,4 +458,12 @@
   border: none;
   box-sizing: border-box;
   margin: 40px 0 0 0;
+
+  @media (min-width: @xs-width) {
+    margin-top: 61px;
+  }
+
+  @media (min-width: @sm-width) {
+    width: 290px;
+  }
 }
