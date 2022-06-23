@@ -24,6 +24,10 @@
     margin-top: 59px;
     padding-left: 5px;
   }
+
+  @media (min-width: @bg-width) {
+    margin-top: 91px;
+  }
 }
 
 .personal-data__form .personal-data__title {
@@ -58,6 +62,10 @@
   @media (min-width: @md-width) {
     margin-top: 25px;
   }
+
+  @media (min-width: @bg-width) {
+    margin-top: 34px;
+  }
 }
 
 .personal-data__fieldset--address {
@@ -78,6 +86,10 @@
   @media (min-width: @md-width) {
     margin-top: 65px;
   }
+
+  @media (min-width: @bg-width) {
+    margin-top: 54px;
+  }
 }
 
 .personal-data__fieldset--password {
@@ -88,6 +100,10 @@
 
   @media (min-width: @sm-width) {
     margin-top: 64px;
+  }
+
+  @media (min-width: @bg-width) {
+    margin-top: 57px;
   }
 }
 
@@ -127,7 +143,11 @@
   }
 
   @media (min-width: @md-width) {
-    width: 34%;
+    width: 234px;
+  }
+
+  @media (min-width: @bg-width) {
+    width: 270px;
   }
 }
 
@@ -146,6 +166,10 @@
   @media (min-width: @md-width) {
     margin-left: 30px;
   }
+
+  @media (min-width: @bg-width) {
+    margin-left: 17px;
+  }
 }
 
 .personal-data__label--patronymic {
@@ -158,10 +182,24 @@
     margin-top: 30px;
     padding-right: 53%;
   }
+
+  @media (min-width: @md-width) {
+    width: 234px;
+  }
+
+  @media (min-width: @bg-width) {
+    padding-right: 0;
+    margin-top: 38px;
+    margin-left: 17px;
+  }
 }
 
 .personal-data__label--phone {
   margin-top: 28px;
+
+  @media (min-width: @bg-width) {
+    margin-top: 38px;
+  }
 }
 
 .personal-data__label--email {
@@ -178,6 +216,11 @@
 
   @media (min-width: @md-width) {
     margin-left: 30px;
+  }
+
+  @media (min-width: @bg-width) {
+    margin-left: 17px;
+    margin-top: 38px;
   }
 }
 
@@ -198,6 +241,10 @@
   @media (min-width: @md-width) {
     margin-left: 30px;
   }
+
+  @media (min-width: @bg-width) {
+    margin-left: 17px;
+  }
 }
 
 .personal-data__label--region {
@@ -207,6 +254,11 @@
 
   @media (min-width: @sm-width) {
     margin-top: 29px;
+  }
+
+  @media (min-width: @bg-width) {
+    margin-top: 49px;
+    margin-left: 17px;
   }
 }
 
@@ -223,6 +275,11 @@
   @media (min-width: @md-width) {
     margin-left: 30px;
   }
+
+  @media (min-width: @bg-width) {
+    margin-left: 0;
+    margin-top: 40px;
+  }
 }
 
 .personal-data__label--id {
@@ -232,6 +289,11 @@
 
   @media (min-width: @sm-width) {
     margin-top: 29px;
+  }
+
+  @media (min-width: @bg-width) {
+    margin-top: 40px;
+    margin-left: 17px;
   }
 }
 
@@ -307,6 +369,11 @@
   margin: 0;
   padding: 0;
   border-radius: 50%;
+
+  @media (min-width: @bg-width) {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .personaml-data__label-avatar {
@@ -327,10 +394,20 @@
   }
 }
 
+.personal-data__break-title {
+  display: block;
+  flex-basis: 100%;
+  height: 0;
+}
+
 .personal-data__break {
   display: block;
   flex-basis: 100%;
   height: 0;
+
+  @media (min-width: @bg-width) {
+    display: none;
+  }
 }
 
 .personal-data__out {
