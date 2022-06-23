@@ -17,144 +17,6 @@
   }
 }
 
-.personal-data__list {
-  margin: 20px 0 0 0;
-  padding: 21px 30px 21px 14px;
-  list-style-type: none;
-  background-color: @bgMenu;
-
-  @media (min-width: @xs-width) {
-    margin-left: 5px;
-    margin-top: 16px;
-    padding-left: 28px;
-  }
-
-  @media (min-width: @sm-width) {
-    margin-top: 23px;
-  }
-}
-
-.personal-data__item {
-  padding-bottom: 16px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  box-sizing: border-box;
-
-  @media (min-width: @xs-width) {
-    padding-bottom: 21px;
-  }
-}
-
-.personal-data__item:first-child {
-  margin-top: 10px;
-
-  @media (min-width: @xs-width) {
-    margin-top: 7px;
-  }
-}
-
-.personal-data__item:nth-child(2) {
-  margin-top: 23px;
-  padding-bottom: 21px;
-
-  @media (min-width: @xs-width) {
-    padding-bottom: 24px;
-  }
-}
-
-.personal-data__item:nth-child(3) {
-  margin-top: 26px;
-  padding-bottom: 22px;
-
-  @media (min-width: @xs-width) {
-    padding-bottom: 26px;
-  }
-}
-
-.personal-data__item--active a {
-  color: @activeColor;
-}
-
-.personal-data__link {
-  display: block;
-  height: 100%;
-  font-family: "GothamPro", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 27px;
-  text-decoration: none;
-  color: @textColor;
-  padding-left: 44px;
-  position: relative;
-
-  @media (min-width: @xs-width) {
-    font-size: 18px;
-    line-height: 24px;
-  }
-}
-
-.personal-data__item--active .personal-data__link {
-  @media (min-width: @xs-width) {
-    font-size: 20px;
-    line-height: 24px;
-    padding-left: 44px;
-  }
-}
-
-.personal-data__link::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-}
-
-.personal-data__link--profile::before {
-  background-image: url("../img/profile.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 27px;
-  height: 34px;
-  margin: -17px 0 0 0;
-
-  @media (min-width: @xs-width) {
-    margin-top: -20px;
-  }
-}
-
-.personal-data__item--active .personal-data__link--profile::before {
-  background-image: url("../img/profile-active.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 27px;
-  height: 34px;
-  margin: -23px 0 0 0;
-}
-
-.personal-data__link--history::before {
-  background-image: url("../img/history.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 32px;
-  height: 31px;
-  margin: -16px 0 0 0;
-}
-
-.personal-data__item--active .personal-data__link--history::before {
-  background-image: url("../img/history-active.svg");
-}
-
-.personal-data__link--review::before {
-  background-image: url("../img/review.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 32px;
-  height: 31px;
-  margin: -16px 0 0 0;
-}
-
-.personal-data__item--active .personal-data__link--review::before {
-  background-image: url("../img/review-active.svg");
-}
-
 .personal-data__form {
   margin: 51px 0 0 0;
 
@@ -192,6 +54,10 @@
   @media (min-width: @sm-width) {
     margin-top: 39px;
   }
+
+  @media (min-width: @md-width) {
+    margin-top: 25px;
+  }
 }
 
 .personal-data__fieldset--address {
@@ -207,6 +73,10 @@
 
   @media (min-width: @sm-width) {
     margin-top: 36px;
+  }
+
+  @media (min-width: @md-width) {
+    margin-top: 65px;
   }
 }
 
@@ -255,6 +125,10 @@
     font-size: 18px;
     line-height: 30px;
   }
+
+  @media (min-width: @md-width) {
+    width: 34%;
+  }
 }
 
 .personal-data__label--surname {
@@ -267,6 +141,10 @@
   @media (min-width: @sm-width) {
     margin-left: auto;
     margin-top: 38px;
+  }
+
+  @media (min-width: @md-width) {
+    margin-left: 30px;
   }
 }
 
@@ -297,6 +175,10 @@
     margin-left: auto;
     margin-top: 28px;
   }
+
+  @media (min-width: @md-width) {
+    margin-left: 30px;
+  }
 }
 
 .personal-data__label--country {
@@ -311,6 +193,10 @@
   @media (min-width: @sm-width) {
     margin-top: 49px;
     margin-left: auto;
+  }
+
+  @media (min-width: @md-width) {
+    margin-left: 30px;
   }
 }
 
@@ -332,6 +218,10 @@
   @media (min-width: @sm-width) {
     margin-left: auto;
     margin-top: 29px;
+  }
+
+  @media (min-width: @md-width) {
+    margin-left: 30px;
   }
 }
 
@@ -465,5 +355,9 @@
 
   @media (min-width: @sm-width) {
     width: 290px;
+  }
+
+  @media (min-width: @md-width) {
+    display: none;
   }
 }
