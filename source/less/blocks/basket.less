@@ -1,0 +1,169 @@
+.basket {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 30px;
+  position: absolute;
+  top: 51px;
+  right: -200px;
+  background-color: @bgMenu;
+  width: 800px;
+}
+
+.basket__title {
+  font-family: "NeueMachina", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41px;
+  color: @textColor;
+}
+
+.basket__close-basket {
+  display: block;
+  width: 34px;
+  height: 17px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  background-image: url("../img/basket-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.basket__list {
+  width: 100%;
+  list-style-type: none;
+  margin: 26px 0 0 0;
+  padding: 0;
+}
+
+.basket__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 11px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.basket__item:not(:first-child) {
+  margin-top: 30px;
+}
+
+.basket__link {
+  display: flex;
+  align-items: flex-start;
+  font-size: 20px;
+  line-height: 25px;
+  color: @textColor;
+  text-decoration: none;
+}
+
+.basket__img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+}
+
+.basket__name {
+  display: block;
+  margin: 0 0 0 12px;
+  padding: 0;
+}
+
+.basket__button-col {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.basket__button-col--minus {
+  margin: 0 29px 0 auto;
+  background-image: url("../img/basket-minus.svg");
+}
+
+.basket__button-col--plus {
+  margin: 0 70px 0 29px;
+  background-image: url("../img/basket-plus.svg");
+}
+
+.basket__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  background-color: @bgColor;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: @textColor;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.basket__price {
+  margin: 0 37px 0 0;
+  font-size: 20px;
+  line-height: 25px;
+  color: @textColor;
+}
+
+.basket__button-del {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../img/union.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+}
+
+.basket__total {
+  display: flex;
+  margin: 35px 0 0 0;
+  padding: 0 0 15px 0;
+  justify-content: space-between;
+  color: @textColor;
+  width: 100%;
+  font-size: 20px;
+  line-height: 25px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.basket__total p {
+  margin: 0;
+  padding: 0;
+}
+
+.basket__total-price {
+  color: @activeColor;
+}
+
+.basket__open-link {
+  display: block;
+  width: 288px;
+  height: 80px;
+  box-sizing: border-box;
+  background-color: @activeColor;
+  color: @textColor;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  align-content: center;
+  border: none;
+  margin: 38px 0 0 0;
+}

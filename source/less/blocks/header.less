@@ -184,7 +184,11 @@
   }
 }
 
-.header__basket {
+.header__wrapper-basket {
+  position: relative;
+}
+
+.header__basket-link {
   margin: 3px 33px 0 0;
   position: relative;
 
@@ -219,7 +223,7 @@
   }
 }
 
-.header__basket::after {
+.header__basket-link::after {
   content: attr(data-col);
   position: absolute;
   top: 3px;
@@ -241,7 +245,7 @@
   }
 }
 
-.header__basket::before {
+.header__basket-link::before {
   @media (min-width: @md-width) {
     content: attr(data-price);
     position: absolute;
