@@ -1,0 +1,141 @@
+.card-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-info__title {
+  font-family: "NeueMachina", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 57px;
+  color: @textColor;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.card-info__list {
+  width: 100%;
+  margin: 40px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card-info__item {
+  margin: 0;
+  padding: 0 0 15px 0;
+  font-size: 18px;
+  line-height: 30px;
+  color: @textColor;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-info__item:not(:first-child) {
+  margin-top: 20px;
+}
+
+.card-info__subtitle {
+  font-family: "NeueMachina", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41px;
+  color: @textColor;
+  margin: 35px 0 0 0;
+  padding: 0;
+  width: 100%;
+}
+
+.card-info__details-list {
+  margin: 25px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+
+.card-info__details-item {
+  margin: 20px 0 0 0;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 30px;
+  color: @textColor;
+}
+
+.card-info__details-item > span:last-child {
+  color: @activeColor;
+}
+
+.card-info__wrapper-col {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 30px 0 0 0;
+  width: 100%;
+}
+
+.card-info__button-col {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-info__button-col--minus {
+  margin: 0 29px 0 0;
+  background-image: url("../img/basket-minus.svg");
+}
+
+.card-info__button-col--plus {
+  margin: 0 70px 0 29px;
+  background-image: url("../img/basket-plus.svg");
+}
+
+.card-info__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  background-color: @bgColor;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: @textColor;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.card-info__submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 0 0;
+  width: 288px;
+  height: 80px;
+  border: none;
+  background-color: @bgMenu;
+  color: @textColor;
+  font-size: 18px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.card-info__basket {
+  display: block;
+  margin: 30px 0 0 5px;
+  width: 127px;
+  height: 80px;
+  cursor: pointer;
+  background-color: @bgMenu;
+  background-image: url("../img/card-basket.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

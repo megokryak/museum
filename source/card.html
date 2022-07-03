@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Museum</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+    <!--Header start-->
+    <header class="header">
+      <div class="header__wrapper-container container">
+        <a class="header__logo">
+          <svg class="header__logo-svg" aria-hidden="true" focusable="false" width="47" height="42" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#logo-mobile"></use>
+          </svg>
+          <svg class="header__logo-svg--xs" aria-hidden="true" focusable="false" width="176" height="31" viewBox="0 0 176 31" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#footer-logo"></use>
+          </svg>
+        </a>
+        <p class="header__logo-text">
+          Музей<br/>Художественного<br/>Стекла
+        </p>
+        <button class="header__change-color" type="button">
+          <span class="header__change-text">Светлая вкл.</span>
+        </button>
+        <a class="header__basket" data-col="10" data-price="15 000 ₽">
+          <svg class="header__basket-svg" aria-hidden="true" focusable="false" width="31" height="30" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#basket"></use>
+          </svg>
+        </a>
+        <a href="auth.html" class="header__auth">
+          <svg class="header__auth-svg" aria-hidden="true" focusable="false" width="28" height="34" viewBox="0 0 28 34" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#auth"></use>
+          </svg>
+        </a>
+        <button class="header__toggle" type="button">
+          <svg class="header__toggle-svg" width="40" height="13" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#toggle"></use>
+          </svg>
+          <svg class="header__close-menu header__close-menu--hide" width="22" height="22" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#close-menu"></use>
+          </svg>
+          <span class="visually-hidden">Открыть меню/Закрыть меню</span>
+        </button>
+        <!--Main Menu start-->
+        <nav class="header__navigation main-nav main-nav--closed">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html" class="main-nav__link main-nav__link--active">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="timetable.html" class="main-nav__link">Расписание</a>
+              </li>
+              <li class="main-nav__item ">
+                <a href="#" class="main-nav__link main-nav__link--toggle main-nav__link--open">Музей</a>
+                <ul class="main-nav__sublist main-nav__sublist--close">
+                  <li class="main-nav__subitem">
+                    <a href="museum.html" class="main-nav__link">О музее</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__link">Новости</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__link">Полезные статьи</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__link">Контакты</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a href="shop.html" class="main-nav__link">Магазин сувениров</a>
+              </li>
+            </ul>
+            <button class="main-nav__change-color" type="button">Светлая вкл.</button>
+          </div>
+        </nav>
+        <!--Main Menu end-->
+      </div>
+
+    </header>
+    <!--Header end-->
+
+    <!--Main start-->
+    <main class="main-card">
+      <div class="main-card__container container">
+        <ul class="shop__breadcrumbs breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Магазин</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Палочка для коктейля «Дельфин»</a>
+          </li>
+        </ul>
+        <section class="main-card__form-card form-card">
+          <div class="form-card__wrapper-img">
+            <picture>
+              <!-- <source media="(min-width: 1440px)" srcset="img/Products/product1_1440.jpg 1x, img/Products/product1_1440@2x.jpg 2x"> -->
+              <img src="img/Products/card1.jpg" srcset="img/Products/card1@2x.jpg" alt="Палочка для коктейля «Дельфин»" width="720" height="1121" class="form-card__img">
+            </picture>
+            <ul class="form-card__button-list">
+              <li class="form-card__button-item">
+                <button class="form-card__button form-card__prev" type="button">
+                  <span class="visually-hidden">Предыдущее фото</span>
+                </button>
+              </li>
+              <li class="form-card__button-item">
+                <button class="form-card__button form-card__next" type="button">
+                  <span class="visually-hidden">Следующее фото</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <form action="#" method="post" class="main-card__card-info card-info">
+            <h2 class="card-info__title">Палочка для коктейля «Дельфин»</h2>
+            <ul class="card-info__list">
+              <li class="card-info__item">Декоративная палочка c наконечником в форме дельфина</li>
+              <li class="card-info__item">Длина 20 см.</li>
+              <li class="card-info__item">Стекло б\цв.</li>
+              <li class="card-info__item">Стеклодувная техника, Авторская ручная работа.</li>
+              <li class="card-info__item">Дельфины, кто они?&nbsp;Млекопитающие или инопланетные существа, «залетевшие» на нашу Землю?&nbsp;Органичные, дружелюбные, веселые существа.&nbsp;Вы знаете, что каждый дельфин имеет свое индивидуальное имя?&nbsp;Это особое сочетание звуков.&nbsp;Интересно, правда?&nbsp;Этот дельфинчик способен подарить своим владельцам столько приятных ощущений!</li>
+              <li class="card-info__item">При заказе более 2 штук, скидка на изделие 30%</li>
+            </ul>
+            <h3 class="card-info__subtitle">Детали</h3>
+            <ul class="card-info__details-list">
+              <li class="card-info__details-item">
+                <span>Артикул</span>
+                <span>C008</span>
+              </li>
+              <li class="card-info__details-item">
+                <span>Категория</span>
+                <span>Сувениры и аксессуары</span>
+              </li>
+              <li class="card-info__details-item">
+                <span>Метка</span>
+                <span>Стеклянный дельфин</span>
+              </li>
+              <li class="card-info__details-item">
+                <span>Габариты</span>
+                <span>С	20 x 7 cm</span>
+              </li>
+            </ul>
+            <div class="card-info__wrapper-col">
+              <button class="card-info__button-col card-info__button-col--minus">
+                <span class="visually-hidden">уменьшить</span>
+              </button>
+              <label class="card-info__label">
+                <input type="number" class="card-info__input" value="3">
+              </label>
+              <button class="card-info__button-col card-info__button-col--plus">
+                <span class="visually-hidden">увеличить</span>
+              </button>
+            </div>
+            <button type="submit" class="card-info__submit">Перейти к оплате</button>
+            <a href="#" class="card-info__basket">
+              <span class="visually-hidden">Перейти в корзину</span>
+            </a>
+          </form>
+        </section>
+        <section class="main-card__reviews reviews">
+          <h2 class="reviews__title">Отзывы</h2>
+          <form action="" class="reviews__form">
+            <picture>
+              <!-- <source media="(min-width: 1440px)" srcset="img/Products/product1_1440.jpg 1x, img/Products/product1_1440@2x.jpg 2x"> -->
+              <img src="img/Avatars/avatar-review.jpg" srcset="img/Avatars/avatar-review@2x.jpg" alt="Аватар" width="68" height="68" class="reviews__avatar">
+            </picture>
+            <label class="reviews__label">
+              <input type="text" class="reviews__input" placeholder="Оставьте свой отзыв">
+            </label>
+            <button class="reviews__submit" type="submit">Оставить отзыв</button>
+          </form>
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <picture>
+                <!-- <source media="(min-width: 1440px)" srcset="img/Products/product1_1440.jpg 1x, img/Products/product1_1440@2x.jpg 2x"> -->
+                <img src="img/Products/card1.jpg" srcset="img/Products/card1@2x.jpg" alt="Аватар" width="68" height="68" class="reviews__avatar">
+              </picture>
+              <div class="reviews__wrapper">
+                <ul class="reviews__rang-list">
+                  <li class="reviews__rang-item reviews__rang-item--good">
+                    <svg width="39" height="37" viewBox="0 0 39 37" xmlns="http://www.w3.org/2000/svg" class="reviews__star">
+                      <g filter="url(#filter0_d_1638_4221)">
+                      <path d="M19.5 0L22.98 10.7102H34.2414L25.1307 17.3295L28.6107 28.0398L19.5 21.4205L10.3893 28.0398L13.8693 17.3295L4.75862 10.7102H16.02L19.5 0Z"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_1638_4221" x="0.758789" y="0" width="37.4824" height="36.0391" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1638_4221"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1638_4221" result="shape"/>
+                        </filter>
+                      </defs>
+                      </svg>
+                  </li>
+                  <li class="reviews__rang-item reviews__rang-item--good">
+                    <svg width="39" height="37" viewBox="0 0 39 37" xmlns="http://www.w3.org/2000/svg" class="reviews__star">
+                      <g filter="url(#filter0_d_1638_4221)">
+                      <path d="M19.5 0L22.98 10.7102H34.2414L25.1307 17.3295L28.6107 28.0398L19.5 21.4205L10.3893 28.0398L13.8693 17.3295L4.75862 10.7102H16.02L19.5 0Z"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_1638_4221" x="0.758789" y="0" width="37.4824" height="36.0391" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1638_4221"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1638_4221" result="shape"/>
+                        </filter>
+                      </defs>
+                      </svg>
+                  </li>
+                  <li class="reviews__rang-item reviews__rang-item--good">
+                    <svg width="39" height="37" viewBox="0 0 39 37" xmlns="http://www.w3.org/2000/svg" class="reviews__star">
+                      <g filter="url(#filter0_d_1638_4221)">
+                      <path d="M19.5 0L22.98 10.7102H34.2414L25.1307 17.3295L28.6107 28.0398L19.5 21.4205L10.3893 28.0398L13.8693 17.3295L4.75862 10.7102H16.02L19.5 0Z"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_1638_4221" x="0.758789" y="0" width="37.4824" height="36.0391" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1638_4221"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1638_4221" result="shape"/>
+                        </filter>
+                      </defs>
+                      </svg>
+                  </li>
+                  <li class="reviews__rang-item reviews__rang-item--good">
+                    <svg width="39" height="37" viewBox="0 0 39 37" xmlns="http://www.w3.org/2000/svg" class="reviews__star">
+                      <g filter="url(#filter0_d_1638_4221)">
+                      <path d="M19.5 0L22.98 10.7102H34.2414L25.1307 17.3295L28.6107 28.0398L19.5 21.4205L10.3893 28.0398L13.8693 17.3295L4.75862 10.7102H16.02L19.5 0Z"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_1638_4221" x="0.758789" y="0" width="37.4824" height="36.0391" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1638_4221"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1638_4221" result="shape"/>
+                        </filter>
+                      </defs>
+                      </svg>
+                  </li>
+                  <li class="reviews__rang-item">
+                    <svg width="39" height="37" viewBox="0 0 39 37" xmlns="http://www.w3.org/2000/svg" class="reviews__star">
+                      <g filter="url(#filter0_d_1638_4221)">
+                      <path d="M19.5 0L22.98 10.7102H34.2414L25.1307 17.3295L28.6107 28.0398L19.5 21.4205L10.3893 28.0398L13.8693 17.3295L4.75862 10.7102H16.02L19.5 0Z"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_1638_4221" x="0.758789" y="0" width="37.4824" height="36.0391" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1638_4221"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1638_4221" result="shape"/>
+                        </filter>
+                      </defs>
+                      </svg>
+                  </li>
+                </ul>
+                <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="reviews__author">Иван Иванов</p>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <picture>
+                <!-- <source media="(min-width: 1440px)" srcset="img/Products/product1_1440.jpg 1x, img/Products/product1_1440@2x.jpg 2x"> -->
+                <img src="img/Products/card1.jpg" srcset="img/Products/card1@2x.jpg" alt="Аватар" width="68" height="68" class="reviews__avatar">
+              </picture>
+              <div class="reviews__wrapper">
+                <ul class="reviews__rang-list">
+                  <li class="reviews__rang-item reviews__rang-item--good">
+                    <svg width="39" height="37" viewBox="0 0 39 37" xmlns="http://www.w3.org/2000/svg" class="reviews__star">
+                      <g filter="url(#filter0_d_1638_4221)">
+                      <path d="M19.5 0L22.98 10.7102H34.2414L25.1307 17.3295L28.6107 28.0398L19.5 21.4205L10.3893 28.0398L13.8693 17.3295L4.75862 10.7102H16.02L19.5 0Z"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_1638_4221" x="0.758789" y="0" width="37.4824" height="36.0391" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1638_4221"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1638_4221" result="shape"/>
+                        </filter>
+                      </defs>
+                      </svg>
+                  </li>
+                  <li class="reviews__rang-item reviews__rang-item--good">
+                    <svg width="39" height="37" viewBox="0 0 39 37" xmlns="http://www.w3.org/2000/svg" class="reviews__star">
+                      <g filter="url(#filter0_d_1638_4221)">
+                      <path d="M19.5 0L22.98 10.7102H34.2414L25.1307 17.3295L28.6107 28.0398L19.5 21.4205L10.3893 28.0398L13.8693 17.3295L4.75862 10.7102H16.02L19.5 0Z"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_1638_4221" x="0.758789" y="0" width="37.4824" height="36.0391" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1638_4221"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1638_4221" result="shape"/>
+                        </filter>
+                      </defs>
+                      </svg>
+                  </li>
+                  <li class="reviews__rang-item reviews__rang-item--good">
+                    <svg width="39" height="37" viewBox="0 0 39 37" xmlns="http://www.w3.org/2000/svg" class="reviews__star">
+                      <g filter="url(#filter0_d_1638_4221)">
+                      <path d="M19.5 0L22.98 10.7102H34.2414L25.1307 17.3295L28.6107 28.0398L19.5 21.4205L10.3893 28.0398L13.8693 17.3295L4.75862 10.7102H16.02L19.5 0Z"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_1638_4221" x="0.758789" y="0" width="37.4824" height="36.0391" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1638_4221"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1638_4221" result="shape"/>
+                        </filter>
+                      </defs>
+                      </svg>
+                  </li>
+                  <li class="reviews__rang-item reviews__rang-item--good">
+                    <svg width="39" height="37" viewBox="0 0 39 37" xmlns="http://www.w3.org/2000/svg" class="reviews__star">
+                      <g filter="url(#filter0_d_1638_4221)">
+                      <path d="M19.5 0L22.98 10.7102H34.2414L25.1307 17.3295L28.6107 28.0398L19.5 21.4205L10.3893 28.0398L13.8693 17.3295L4.75862 10.7102H16.02L19.5 0Z"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_1638_4221" x="0.758789" y="0" width="37.4824" height="36.0391" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1638_4221"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1638_4221" result="shape"/>
+                        </filter>
+                      </defs>
+                      </svg>
+                  </li>
+                  <li class="reviews__rang-item">
+                    <svg width="39" height="37" viewBox="0 0 39 37" xmlns="http://www.w3.org/2000/svg" class="reviews__star">
+                      <g filter="url(#filter0_d_1638_4221)">
+                      <path d="M19.5 0L22.98 10.7102H34.2414L25.1307 17.3295L28.6107 28.0398L19.5 21.4205L10.3893 28.0398L13.8693 17.3295L4.75862 10.7102H16.02L19.5 0Z"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_1638_4221" x="0.758789" y="0" width="37.4824" height="36.0391" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1638_4221"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1638_4221" result="shape"/>
+                        </filter>
+                      </defs>
+                      </svg>
+                  </li>
+                </ul>
+                <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="reviews__author">Иван Иванов</p>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <picture>
+                <!-- <source media="(min-width: 1440px)" srcset="img/Products/product1_1440.jpg 1x, img/Products/product1_1440@2x.jpg 2x"> -->
+                <img src="img/Products/card1.jpg" srcset="img/Products/card1@2x.jpg" alt="Аватар" width="68" height="68" class="reviews__avatar">
+              </picture>
+              <div class="reviews__wrapper">
+                <ul class="reviews__rang-list">
+                  <li class="reviews__rang-item reviews__rang-item--good">
+                    <svg width="39" height="37" viewBox="0 0 39 37" xmlns="http://www.w3.org/2000/svg" class="reviews__star">
+                      <g filter="url(#filter0_d_1638_4221)">
+                      <path d="M19.5 0L22.98 10.7102H34.2414L25.1307 17.3295L28.6107 28.0398L19.5 21.4205L10.3893 28.0398L13.8693 17.3295L4.75862 10.7102H16.02L19.5 0Z"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_1638_4221" x="0.758789" y="0" width="37.4824" height="36.0391" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1638_4221"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1638_4221" result="shape"/>
+                        </filter>
+                      </defs>
+                      </svg>
+                  </li>
+                  <li class="reviews__rang-item reviews__rang-item--good">
+                    <svg width="39" height="37" viewBox="0 0 39 37" xmlns="http://www.w3.org/2000/svg" class="reviews__star">
+                      <g filter="url(#filter0_d_1638_4221)">
+                      <path d="M19.5 0L22.98 10.7102H34.2414L25.1307 17.3295L28.6107 28.0398L19.5 21.4205L10.3893 28.0398L13.8693 17.3295L4.75862 10.7102H16.02L19.5 0Z"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_1638_4221" x="0.758789" y="0" width="37.4824" height="36.0391" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1638_4221"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1638_4221" result="shape"/>
+                        </filter>
+                      </defs>
+                      </svg>
+                  </li>
+                  <li class="reviews__rang-item reviews__rang-item--good">
+                    <svg width="39" height="37" viewBox="0 0 39 37" xmlns="http://www.w3.org/2000/svg" class="reviews__star">
+                      <g filter="url(#filter0_d_1638_4221)">
+                      <path d="M19.5 0L22.98 10.7102H34.2414L25.1307 17.3295L28.6107 28.0398L19.5 21.4205L10.3893 28.0398L13.8693 17.3295L4.75862 10.7102H16.02L19.5 0Z"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_1638_4221" x="0.758789" y="0" width="37.4824" height="36.0391" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1638_4221"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1638_4221" result="shape"/>
+                        </filter>
+                      </defs>
+                      </svg>
+                  </li>
+                  <li class="reviews__rang-item reviews__rang-item--good">
+                    <svg width="39" height="37" viewBox="0 0 39 37" xmlns="http://www.w3.org/2000/svg" class="reviews__star">
+                      <g filter="url(#filter0_d_1638_4221)">
+                      <path d="M19.5 0L22.98 10.7102H34.2414L25.1307 17.3295L28.6107 28.0398L19.5 21.4205L10.3893 28.0398L13.8693 17.3295L4.75862 10.7102H16.02L19.5 0Z"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_1638_4221" x="0.758789" y="0" width="37.4824" height="36.0391" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1638_4221"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1638_4221" result="shape"/>
+                        </filter>
+                      </defs>
+                      </svg>
+                  </li>
+                  <li class="reviews__rang-item">
+                    <svg width="39" height="37" viewBox="0 0 39 37" xmlns="http://www.w3.org/2000/svg" class="reviews__star">
+                      <g filter="url(#filter0_d_1638_4221)">
+                      <path d="M19.5 0L22.98 10.7102H34.2414L25.1307 17.3295L28.6107 28.0398L19.5 21.4205L10.3893 28.0398L13.8693 17.3295L4.75862 10.7102H16.02L19.5 0Z"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_1638_4221" x="0.758789" y="0" width="37.4824" height="36.0391" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1638_4221"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1638_4221" result="shape"/>
+                        </filter>
+                      </defs>
+                      </svg>
+                  </li>
+                </ul>
+                <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="reviews__author">Иван Иванов</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="main-card__similar-products similar-products">
+          <h2 class="similar-products__title">Похожие товары</h2>
+          <ul class="similar-products__list">
+            <li class="similar-products__item">
+              <picture>
+                <!-- <source media="(min-width: 1440px)" srcset="img/Products/product1_1440.jpg 1x, img/Products/product1_1440@2x.jpg 2x"> -->
+                <img src="img/similar/similar-card1.jpg" srcset="img/similar/similar-card1@2x.jpg" alt="Похожий товар - 1" width="420" height="529" class="similar-products__img">
+              </picture>
+              <a href="#" class="similar-products__link">
+                <h3>Подсвечник «Грация»</h3>
+              </a>
+              <p class="similar-products__price">9 999 ₽</p>
+              <a href="#" class="similar-products__more">Подробнее</a>
+              <button class="similar-products__add-to-basket" type="button">Добавить в корзину</button>
+            </li>
+            <li class="similar-products__item">
+              <picture>
+                <!-- <source media="(min-width: 1440px)" srcset="img/Products/product1_1440.jpg 1x, img/Products/product1_1440@2x.jpg 2x"> -->
+                <img src="img/similar/similar-card1.jpg" srcset="img/similar/similar-card1@2x.jpg" alt="Похожий товар - 1" width="420" height="529" class="similar-products__img">
+              </picture>
+              <a href="#" class="similar-products__link">
+                <h3>Подсвечник «Грация»</h3>
+              </a>
+              <p class="similar-products__price">9 999 ₽</p>
+              <a href="#" class="similar-products__more">Подробнее</a>
+              <button class="similar-products__add-to-basket" type="button">Добавить в корзину</button>
+            </li>
+            <li class="similar-products__item">
+              <picture>
+                <!-- <source media="(min-width: 1440px)" srcset="img/Products/product1_1440.jpg 1x, img/Products/product1_1440@2x.jpg 2x"> -->
+                <img src="img/similar/similar-card1.jpg" srcset="img/similar/similar-card1@2x.jpg" alt="Похожий товар - 1" width="420" height="529" class="similar-products__img">
+              </picture>
+              <a href="#" class="similar-products__link">
+                <h3>Подсвечник «Грация»</h3>
+              </a>
+              <p class="similar-products__price">9 999 ₽</p>
+              <a href="#" class="similar-products__more">Подробнее</a>
+              <button class="similar-products__add-to-basket" type="button">Добавить в корзину</button>
+            </li>
+            <li class="similar-products__item">
+              <picture>
+                <!-- <source media="(min-width: 1440px)" srcset="img/Products/product1_1440.jpg 1x, img/Products/product1_1440@2x.jpg 2x"> -->
+                <img src="img/similar/similar-card1.jpg" srcset="img/similar/similar-card1@2x.jpg" alt="Похожий товар - 1" width="420" height="529" class="similar-products__img">
+              </picture>
+              <a href="#" class="similar-products__link">
+                <h3>Подсвечник «Грация»</h3>
+              </a>
+              <p class="similar-products__price">9 999 ₽</p>
+              <a href="#" class="similar-products__more">Подробнее</a>
+              <button class="similar-products__add-to-basket" type="button">Добавить в корзину</button>
+            </li>
+            <li class="similar-products__item">
+              <picture>
+                <!-- <source media="(min-width: 1440px)" srcset="img/Products/product1_1440.jpg 1x, img/Products/product1_1440@2x.jpg 2x"> -->
+                <img src="img/similar/similar-card1.jpg" srcset="img/similar/similar-card1@2x.jpg" alt="Похожий товар - 1" width="420" height="529" class="similar-products__img">
+              </picture>
+              <a href="#" class="similar-products__link">
+                <h3>Подсвечник «Грация»</h3>
+              </a>
+              <p class="similar-products__price">9 999 ₽</p>
+              <a href="#" class="similar-products__more">Подробнее</a>
+              <button class="similar-products__add-to-basket" type="button">Добавить в корзину</button>
+            </li>
+          </ul>
+          <ol class="similar-products__pagination-list">
+            <li class="similar-products__pagination-item">
+              <button class="similar-products__pagination-button similar-products__pagination-button-current" type="button">
+                <span class="visually-hidden">1</span>
+              </button>
+            </li>
+            <li class="similar-products__pagination-item">
+              <button class="similar-products__pagination-button" type="button">
+                <span class="visually-hidden">2</span>
+              </button>
+            </li>
+            <li class="similar-products__pagination-item">
+              <button class="similar-products__pagination-button" type="button">
+                <span class="visually-hidden">3</span>
+              </button>
+            </li>
+          </ol>
+          <ul class="similar-products__button-list">
+            <li class="similar-products__button-item">
+              <button class="similar-products__button similar-products__prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+            </li>
+            <li class="similar-products__button-item">
+              <button class="similar-products__button similar-products__next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <!--Main end-->
+    <!-- Footer start -->
+    <footer class="footer">
+      <div class="footer__wrapper-container container">
+        <ul class="footer__menu-list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Главная</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Выставки и события</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Новости</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Магазин</a>
+          </li>
+        </ul>
+        <a href="#" class="footer__logo">
+          <svg class="footer__logo-svg" aria-hidden="true" focusable="false" width="153" height="27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#footer-logo"></use>
+          </svg>
+        </a>
+        <p class="footer__logo-text">
+          Музей<br/>Художественного<br/>Стекла
+        </p>
+        <a href="#" class="footer__policy">Политика конфиденциальности</a>
+        <div class="footer__wrapper-socials">
+          <ul class="footer__socials">
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">ВКонтакте</a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">Instagram</a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">Facebook</a>
+            </li>
+          </ul>
+          <button class="footer__button-up" type="button">Наверх</button>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
