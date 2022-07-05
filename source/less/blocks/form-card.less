@@ -1,16 +1,28 @@
 .form-card {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+
+  @media (min-width: @md-width) {
+    flex-wrap: nowrap;
+  }
 }
 
 .form-card__wrapper-img {
-  margin-right: 30px;
+  @media (min-width: @md-width) {
+    margin-right: 30px;
+  }
 }
 
 .form-card__img {
   display: block;
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: auto;
+
+  @media (min-width: @md-width) {
+    width: 720px;
+  }
 }
 
 .form-card__button-list {

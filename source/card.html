@@ -23,11 +23,83 @@
         <button class="header__change-color" type="button">
           <span class="header__change-text">Светлая вкл.</span>
         </button>
-        <a class="header__basket" data-col="10" data-price="15 000 ₽">
-          <svg class="header__basket-svg" aria-hidden="true" focusable="false" width="31" height="30" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#basket"></use>
-          </svg>
-        </a>
+        <div class="header__wrapper-basket">
+          <a class="header__basket-link" data-col="10" data-price="15 000 ₽">
+            <svg class="header__basket-svg" aria-hidden="true" focusable="false" width="31" height="30" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#basket"></use>
+            </svg>
+          </a>
+          <!-- <form class="header__basket basket" action="#" method="post">
+            <h2 class="basket__title">Корзина</h2>
+            <button class="basket__close-basket" type="button">
+              <span class="visually-hidden">Закрыть корзину</span>
+            </button>
+            <ul class="basket__list">
+              <li class="basket__item">
+                <a  class="basket__link" href="#">
+                  <img class="basket__img" src="img/basket/product_1.png" alt="Палочка для коктейля" width="49" height="49">
+                  <p class="basket__name">Палочка для коктейля</p>
+                </a>
+                <button class="basket__button-col basket__button-col--minus">
+                  <span class="visually-hidden">уменьшить</span>
+                </button>
+                <label class="basket__label">
+                  <input type="number" class="basket__input" value="2">
+                </label>
+                <button class="basket__button-col basket__button-col--plus">
+                  <span class="visually-hidden">увеличить</span>
+                </button>
+                <p class="basket__price">1 100 ₽</p>
+                <button type="button" class="basket__button-del">
+                  <span class = "visually-hidden">Удалить из корзины</span>
+                </button>
+              </li>
+              <li class="basket__item">
+                <a  class="basket__link" href="#">
+                  <img class="basket__img" src="img/basket/product_2.png" alt="Палочка для коктейля" width="49" height="49">
+                  <p class="basket__name">Палочка для коктейля</p>
+                </a>
+                <button class="basket__button-col basket__button-col--minus">
+                  <span class="visually-hidden">уменьшить</span>
+                </button>
+                <label class="basket__label">
+                  <input type="number" class="basket__input" value="2">
+                </label>
+                <button class="basket__button-col basket__button-col--plus">
+                  <span class="visually-hidden">увеличить</span>
+                </button>
+                <p class="basket__price">1 100 ₽</p>
+                <button type="button" class="basket__button-del">
+                  <span class = "visually-hidden">Удалить из корзины</span>
+                </button>
+              </li>
+              <li class="basket__item">
+                <a  class="basket__link" href="#">
+                  <img class="basket__img" src="img/basket/product_3.png" alt="Палочка для коктейля" width="49" height="49">
+                  <p class="basket__name">Палочка для коктейля</p>
+                </a>
+                <button class="basket__button-col basket__button-col--minus">
+                  <span class="visually-hidden">уменьшить</span>
+                </button>
+                <label class="basket__label">
+                  <input type="number" class="basket__input" value="2">
+                </label>
+                <button class="basket__button-col basket__button-col--plus">
+                  <span class="visually-hidden">увеличить</span>
+                </button>
+                <p class="basket__price">1 100 ₽</p>
+                <button type="button" class="basket__button-del">
+                  <span class = "visually-hidden">Удалить из корзины</span>
+                </button>
+              </li>
+            </ul>
+            <div class="basket__total">
+              <p class="basket__total-products">Итого</p>
+              <p class="basket__total-price">3300 Р</p>
+            </div>
+            <button type="submit" class="basket__open-link">Перейти к оплате</button>
+          </form> -->
+        </div>
         <a href="auth.html" class="header__auth">
           <svg class="header__auth-svg" aria-hidden="true" focusable="false" width="28" height="34" viewBox="0 0 28 34" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/sprite.svg#auth"></use>

@@ -10,11 +10,16 @@
   font-family: "NeueMachina", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
-  line-height: 57px;
+  font-size: 26px;
+  line-height: 30px;
   color: @textColor;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @md-width) {
+    font-size: 50px;
+    line-height: 57px;
+  }
 }
 
 .similar-products__list {
@@ -28,11 +33,16 @@
 .similar-products__item {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 30px 0 0;
+  margin: 0;
   padding: 0 0 16px 0;
-  width: 420px;
+  width: 100%;
   box-sizing: border-box;
   background-color: @bgMenu;
+
+  @media (min-width: @md-width) {
+    width: 420px;
+    margin: 0 30px 0 0;
+  }
 }
 
 .similar-products__img {
