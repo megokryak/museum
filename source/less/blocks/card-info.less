@@ -2,6 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 30px;
+
+  @media (min-width: @sm-width) {
+    width: 70%;
+  }
+
+  @media (min-width: @gg-width) {
+    width: auto;
+  }
 }
 
 .card-info__title {
